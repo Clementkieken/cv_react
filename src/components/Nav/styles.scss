@@ -1,0 +1,13 @@
+.menu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: center;
+}
+
+li{
+  margin: 1.5rem;
+
+}
