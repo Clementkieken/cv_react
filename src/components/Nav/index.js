@@ -7,41 +7,79 @@ const Navbar = ({
   refAbout, refExperiences, refFormation, refSkills, refProjets,
 }) => (
   <nav className="menu">
-    <ul className="menu">
-      <li onClick={() => {
-        const { top } = refAbout.current.getBoundingClientRect();
-        window.scrollTo({ top, behavior: 'smooth' });
-      }}
+    <ul className="menu__items">
+
+      <div
+        className="menu__item_one"
+        onClick={() => {
+          const { top } = refAbout.current.getBoundingClientRect();
+          window.scrollTo({ top, behavior: 'smooth' });
+        }}
       >
-        A propos
-      </li>
-      <li onClick={() => {
-        const { top } = refExperiences.current.getBoundingClientRect();
-        window.scrollTo({ top, behavior: 'smooth' });
-      }}
+        <li
+          className="menu__li"
+        >
+          A propos
+        </li>
+      </div>
+
+      <div
+        className="menu__item_one"
+        onClick={() => {
+          const { top } = refExperiences.current.getBoundingClientRect();
+          window.scrollTo({ top, behavior: 'smooth' });
+        }}
       >
-        Experiences
-      </li>
-      <li onClick={() => {
-        const { top } = refFormation.current.getBoundingClientRect();
-        window.scrollTo({ top, behavior: 'smooth' });
-      }}
+        <li
+          className="menu__li"
+
+        >
+          Experiences
+        </li>
+      </div>
+
+      <div
+        className="menu__item_one"
+        onClick={() => {
+          const { top } = refFormation.current.getBoundingClientRect();
+          window.scrollTo({ top, behavior: 'smooth' });
+        }}
       >
-        Formmation
-      </li>
-      <li onClick={() => {
-        const { top } = refSkills.current.getBoundingClientRect();
-        window.scrollTo({ top, behavior: 'smooth' });
-      }}
+        <li
+          className="menu__li"
+        >
+          Formation
+        </li>
+      </div>
+
+      <div
+        className="menu__item_one"
+        onClick={() => {
+          const { top } = refSkills.current.getBoundingClientRect();
+          window.scrollTo({ top, behavior: 'smooth' });
+        }}
       >
-        Compétences
-      </li>
-      <li onClick={() => {
-        const { top } = refProjets.current.getBoundingClientRect();
-        window.scrollTo({ top, behavior: 'smooth' });
-      }}
-      >Projets
-      </li>
+        <li
+          className="menu__li"
+        >
+          Compétences
+        </li>
+      </div>
+
+      <div
+        className="menu__item_one"
+        onClick={() => {
+          const { top } = refProjets.current.getBoundingClientRect();
+          window.scrollTo({ top, behavior: 'smooth' });
+        }}
+      >
+        <li
+          className="menu__li"
+        >
+          Projets
+        </li>
+      </div>
+
     </ul>
   </nav>
 );

@@ -1,3 +1,27 @@
 .about__main{
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+  justify-content: space-around;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.about__h1{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.about__h2{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.about__img{
+  text-align: center;
+  margin-right:auto;
+  margin-left: auto;
+  border-radius: 50%;
+  width: 20%;
 }
