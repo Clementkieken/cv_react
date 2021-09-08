@@ -1,7 +1,8 @@
 import './styles.scss';
+import PropTypes from 'prop-types';
 
-const Skills = () => (
-  <div className="skills__main">
+const Skills = ({ refSkills }) => (
+  <div className="skills__main" ref={refSkills}>
     <h1>Compétences</h1>
 
     <div className="skills__detail">
@@ -50,3 +51,7 @@ const Skills = () => (
 );
 
 export default Skills;
+
+Skills.propTypes = {
+  refSkills: PropTypes.object.isRequired,
+};

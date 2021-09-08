@@ -1,4 +1,6 @@
 // == Import
+import { useRef } from 'react';
+
 // import { Route, Switch } from 'react-router-dom';
 import './styles.css';
 
@@ -11,19 +13,32 @@ import Skills from '../Skills';
 import Projets from '../Projets';
 
 // == Composant
-const App = () => (
-  <div className="app">
+const App = () => {
+  const refAbout = useRef();
+  const refExperiences = useRef();
+  const refFormation = useRef();
+  const refSkills = useRef();
+  const refProjets = useRef();
 
-    <Navbar />
-    <About />
-    <Experiences />
-    <Formation />
-    <Skills />
-    <Projets />
+  return (
+    <div className="app">
 
-  </div>
+      <Navbar
+        refAbout={refAbout}
+        refExperiences={refExperiences}
+        refFormation={refFormation}
+        refSkills={refSkills}
+        refProjets={refProjets}
+      />
+      <About refAbout={refAbout} />
+      <Experiences refExperiences={refExperiences} />
+      <Formation refFormation={refFormation} />
+      <Skills refSkills={refSkills} />
+      <Projets refProjets={refProjets} />
 
-);
+    </div>
+  );
+};
 
 // == Export
 export default App;

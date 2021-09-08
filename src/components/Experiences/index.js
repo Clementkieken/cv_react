@@ -1,8 +1,9 @@
 /* eslint-disable max-len */
 import './styles.scss';
+import PropTypes from 'prop-types';
 
-const Experiences = () => (
-  <div className="experiences__main">
+const Experiences = ({ refExperiences }) => (
+  <div className="experiences__main" ref={refExperiences}>
     <h1>Expériences</h1>
 
     <div className="experiences__detail">
@@ -70,3 +71,7 @@ const Experiences = () => (
 );
 
 export default Experiences;
+
+Experiences.propTypes = {
+  refExperiences: PropTypes.object.isRequired,
+};

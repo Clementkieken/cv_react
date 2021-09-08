@@ -1,8 +1,8 @@
 import './styles.scss';
 
-const Projets = () => (
+const Projets = ({refProjets}) => (
 
-  <div className="projet__main">
+  <div className="projet__main" ref={refProjets}>
     <h1>Projets</h1>
 
     <div className="projet__detail">

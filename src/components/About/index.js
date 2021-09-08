@@ -1,9 +1,10 @@
 /* eslint-disable max-len */
 import './styles.scss';
+import PropTypes from 'prop-types';
 import reactLogo from '../App/react-logo.svg';
 
-const About = () => (
-  <div className="Container">
+const About = ({ refAbout }) => (
+  <div className="about__main" ref={refAbout}>
     <h1>Clément KIEKEN</h1>
     <h2>Développeur web / Monteur audiovisuel</h2>
     <img src={reactLogo} className="profil_picture" alt="profil" />
@@ -15,3 +16,7 @@ const About = () => (
 );
 
 export default About;
+
+About.propTypes = {
+  refAbout: PropTypes.object.isRequired,
+};
