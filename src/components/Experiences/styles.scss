@@ -1,0 +1,59 @@
+.experiences__main{
+  min-height: 100vh;
+  background-color: rgb(219, 226, 239);
+  display: flex;
+  flex-direction: column;
+
+
+  &__title{
+  margin-top: 5rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 2rem;
+  font-size: 2.5rem;
+  color: rgb(37, 10, 133);
+  }
+}
+
+.experiences__detail{
+  margin: 2rem;
+  padding: 1rem;
+
+  &__h2{
+    font-size: 2rem;
+    margin-left: 1rem;
+    font-weight: bold;
+
+  }
+
+  &__h3 {
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 2rem;
+    padding: 1rem 0rem 1rem 0rem;
+
+    &__date{
+      font-size: 1.2rem;
+      font-style: italic;
+
+    }
+  }
+
+  &__p{
+    margin-left: 1.5rem;
+
+  }
+
+  &__ul{
+    margin-left: 1.5rem;
+
+  }
+
+  &__li{
+    padding-bottom: 1rem;
+  }
+}
+
