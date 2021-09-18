@@ -5,6 +5,7 @@ const Formation = ({ refFormation }) => (
   <div className="formations" ref={refFormation}>
     <h1 className="formations__title">Formations</h1>
     <div className="formations__all">
+
       <div className="formations__details">
         <h2 className="formations__details__h2">Développeur Web Full Stack JavaScript React</h2>
         <h3 className="formations__details__h3">O'Clock - Mai 2021 à octobre 2021</h3>

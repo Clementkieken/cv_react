@@ -40,16 +40,16 @@ const Skills = ({ refSkills }) => (
         <h2 className="skills__detail__h2">Développeur</h2>
         <div className="skills__details__logo_display">
           <ul className="skills__details__ul">
-            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={htmllogo} alt="html5 logo" /></li>
-            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={csslogo} alt="css3 logo" /></li>
-            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={reactlogo} alt="react logo" /></li>
-            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={reduxlogo} alt="redux logo" /></li>
-            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={jslogo} alt="javascript logo" /></li>
-            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={nodelogo} alt="nodejs logo" /></li>
-            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={postlogo} alt="postgres logo" /></li>
-            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={ejslogo} alt="ejs logo" /></li>
-            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={expresslogo} alt="express logo" /></li>
-            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={gitlogo} alt="github logo" /></li>
+            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={htmllogo} alt="html5 logo" title="HTML 5" /></li>
+            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={csslogo} alt="css3 logo" title="CSS 3" /></li>
+            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={reactlogo} alt="react logo" title="React" /></li>
+            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={reduxlogo} alt="redux logo" title="Redux" /></li>
+            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={jslogo} alt="javascript logo" title="JavaScript" /></li>
+            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={nodelogo} alt="nodejs logo" title="NodeJS" /></li>
+            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={postlogo} alt="postgres logo" title="PostgreSQL" /></li>
+            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={ejslogo} alt="ejs logo" title="EJS" /></li>
+            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={expresslogo} alt="express logo" title="Express" /></li>
+            <li className="skills__details__li_logo"><img className="formation__details__dev_logo" src={gitlogo} alt="github logo" title="GitHub" /></li>
           </ul>
         </div>
       </div>
@@ -59,13 +59,13 @@ const Skills = ({ refSkills }) => (
       <div className="skills__detail">
         <h2 className="skills__detail__h2">Montage audiovisuel</h2>
         <ul className="skills__detail_ul">
-          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={prlogo} alt="Adobe Premiere Pro logo" /></li>
-          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={pslogo} alt="Adobe PhotoShop logo" /></li>
-          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={aelogo} alt="After Effect logo" /></li>
-          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={avidlogo} alt="Avid logo" /></li>
-          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={fcplogo} alt="FCP 7 logo" /></li>
-          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={melogo} alt="Media Encoder logo" /></li>
-          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={shutterlogo} alt="Shutter Encoder logo" /></li>
+          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={prlogo} alt="Adobe Premiere Pro logo" title="Adobe Première Pro" /></li>
+          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={pslogo} alt="Adobe PhotoShop logo" title="Adobe Photoshop" /></li>
+          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={aelogo} alt="After Effect logo" title="After Effect" /></li>
+          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={avidlogo} alt="Avid logo" title="Avid Media Composer" /></li>
+          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={fcplogo} alt="FCP 7 logo" title="Final Cut Pro 7" /></li>
+          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={melogo} alt="Media Encoder logo" title="Adobe Media Encoder" /></li>
+          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={shutterlogo} alt="Shutter Encoder logo" title="Shutter Encoder" /></li>
         </ul>"
       </div>
 
@@ -74,10 +74,10 @@ const Skills = ({ refSkills }) => (
       <div className="skills__detail">
         <h2 className="skills__detail__h2">Bureautique</h2>
         <ul className="skills__detail__ul">
-          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={wordlogo} alt="Microsoft Word logo" /></li>
-          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={excellogo} alt="Microsoft Excel logo" /></li>
-          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={gdoclogo} alt="Google doc sheet logo" />/</li>
-          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={sflogo} alt="SalesForce logo" /></li>
+          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={wordlogo} alt="Microsoft Word logo" title="Word" /></li>
+          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={excellogo} alt="Microsoft Excel logo" title="Excel" /></li>
+          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={gdoclogo} alt="Google doc sheet logo" title="Gdoc et Gsheet" />/</li>
+          <li className="skills__detail__li"><img className="formation__details__dev_logo" src={sflogo} alt="SalesForce logo" title="SalesForce" /></li>
         </ul>
       </div>
 
