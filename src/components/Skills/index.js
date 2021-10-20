@@ -39,7 +39,7 @@ const Skills = ({ refSkills }) => (
       <div className="skills__detail">
         <h2 className="skills__detail__h2">Développeur</h2>
         <div className="skills__detail__logo_display">
-          <ul className="skills__details__ul">
+          <ul className="skills__detail__ul">
             <li className="skills__detail__li_logo"><img className="formation__details__dev_logo" src={htmllogo} alt="html5 logo" title="HTML 5" /></li>
             <li className="skills__detail__li_logo"><img className="formation__details__dev_logo" src={csslogo} alt="css3 logo" title="CSS 3" /></li>
             <li className="skills__detail__li_logo"><img className="formation__details__dev_logo" src={reactlogo} alt="react logo" title="React" /></li>
@@ -79,7 +79,7 @@ const Skills = ({ refSkills }) => (
           <ul className="skills__detail__ul">
             <li className="skills__detail__li_logo"><img className="formation__details__dev_logo" src={wordlogo} alt="Microsoft Word logo" title="Word" /></li>
             <li className="skills__detail__li_logo"><img className="formation__details__dev_logo" src={excellogo} alt="Microsoft Excel logo" title="Excel" /></li>
-            <li className="skills__detail__li_logo"><img className="formation__details__dev_logo" src={gdoclogo} alt="Google doc sheet logo" title="Gdoc et Gsheet" />/</li>
+            <li className="skills__detail__li_logo"><img className="formation__details__dev_logo" src={gdoclogo} alt="Google doc sheet logo" title="Gdoc et Gsheet" /></li>
             <li className="skills__detail__li_logo"><img className="formation__details__dev_logo" src={sflogo} alt="SalesForce logo" title="SalesForce" /></li>
           </ul>
         </div>
@@ -102,9 +102,9 @@ const Skills = ({ refSkills }) => (
       <div className="skills__detail">
         <h2 className="skills__detail__h2">Divers</h2>
         <ul className="skills__detail__ul">
-          <li className="skills__detail__li">Auteur du mémoire "La Place du Monteur dans l'eSport" en 2013.</li>
-          <li className="skills__detail__li">Management de guilde sur World of Warcraft depuis 14 ans (entre 15 et 30 joueurs).</li>
-          <li className="skills__detail__li">Bénévole sur tout contenu vidéo (clips, émissions,enseignement...)./</li>
+          <li className="skills__detail__li">Auteur du mémoire "<span className="bold">La Place du Monteur dans l'eSport</span>" en 2013.</li>
+          <li className="skills__detail__li"><span className="bold">Management</span> de guilde sur World of Warcraft depuis <span className="bold">14 ans</span> (entre 15 et 30 joueurs).</li>
+          <li className="skills__detail__li">Réalisateur, cadreur, monteur  bénévole sur tout contenu vidéo (clips, émissions,enseignement...)./</li>
           <li className="skills__detail__li">Backpack trip.</li>
 
         </ul>

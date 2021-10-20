@@ -41,13 +41,25 @@
     flex-wrap: wrap;
     align-items: center;
     align-content: flex-start;
+    justify-content: space-around;
     margin-top: 2rem;
 
   }
 
+&__ul{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+
+&__li{
+  padding-bottom: 4%;
+}
+
   &__li_logo{
     display: flex;
-    padding: 10px;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
   }
 
   &__transition{
