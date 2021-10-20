@@ -55,12 +55,22 @@
     text-align: justify;
   }
 
+&__ul{
+ text-align: center;
+}
+
   &__li{
     padding-bottom: 1.5rem;
   }
 
   &__transition{
     border-left: solid black 2px;
+  }
+  
+  &__evadia{
+    font-weight: bold;
+    font-style: italic;
+    color: darkblue;
   }
 }
 

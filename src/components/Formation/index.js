@@ -1,5 +1,6 @@
 import './styles.scss';
 import PropTypes from 'prop-types';
+import { IoChevronForward } from 'react-icons/io5';
 
 const Formation = ({ refFormation }) => (
   <div className="formations" ref={refFormation}>
@@ -10,9 +11,15 @@ const Formation = ({ refFormation }) => (
         <h2 className="formations__details__h2">Développeur Web Full Stack JavaScript React</h2>
         <h3 className="formations__details__h3">O'Clock - Mai 2021 à octobre 2021</h3>
         <div className="formations__details_paragraphe">
-          <p className="formations__details__p"> Pendant <span className="bold">4 mois</span> nous avons appris les bases du code avec comme langage principal <span className="bold">JavaScript</span> que ce soit en front (JS Vanilla) ou en back (<span className="bold">NodeJS</span> mais aussi la BDD avec <span className="bold">PostgreSQL</span>). Chaque jour nous avons appris de nouvelles notions et le soir nous avions des exercices concernant à la fois les notions du jour et également une notion à découvrir par nous même afin de nous familiariser avec la recherche sur la documentation.</p>
-          <p className="formations__details__p">Puis pendant un mois nous nous sommes spécialisés en spé <span className="bold">React</span> où nous avons vu également Redux.</p>
-          <p className="formations__details__p">Enfin, lors du dernier mois, nous nous sommes séparés en plusieurs groupe de 4 à 5 étudiant où nous avons créé un site web responsive mobile. Notre projet, "<span className="bold">Evadia</span>", permet de condenser de multiples API sur des communes afin d'avoir toutes les informations nécessaires quand vous déménagez ou partez en week-end dans un lieu. Voir les détails dans l'onglet Projets.</p>
+          <ul className="formations__details_ul">
+            <li className="formations__details__li"><IoChevronForward /> <span className="bold">798 h</span> intensives.</li>
+            <li className="formations__details__li"><IoChevronForward /> <span className="bold">3 mois</span> de Socle: HTML5/CSS3/PHP/Javascript.</li>
+            <li className="formations__details__li"><IoChevronForward /> <span className="bold">1 mois</span> de spécialisation en React.</li>
+            <li className="formations__details__li"><IoChevronForward /> <span className="bold">1 mois</span> de projet.</li>
+          </ul>
+          <p className="formations__details__p"> Pendant <span className="bold">3 mois</span> nous avons appris les bases du code avec comme langage principal <span className="bold">JavaScript</span> que ce soit en front (JS Vanilla) ou en back (<span className="bold">NodeJS</span> mais aussi la BDD avec <span className="bold">PostgreSQL</span>). Chaque jour nous avons appris de nouvelles notions et le soir nous avions des exercices concernant à la fois les notions du jour et également une notion à découvrir par nous même afin de nous familiariser avec la recherche sur la documentation.</p>
+          <p className="formations__details__p">Puis pendant un mois nous nous sommes spécialisés en spé <span className="bold">React</span> où nous avons vu également <span className="bold">Redux</span>.</p>
+          <p className="formations__details__p">Enfin, lors du dernier mois, nous nous sommes séparés en plusieurs groupe de 4 à 5 étudiant où nous avons créé un site web responsive mobile. Notre projet, <span className="formations__details__evadia"><a href="evadia.tech">Evadia</a></span>, condense de multiples API des communes française en une, afin d'obtenir toutes les informations nécessaires quand vous déménagez ou partez en week-end dans un lieu. Voir les détails dans l'onglet Projets.</p>
         </div>
       </div>
 
@@ -21,11 +28,11 @@ const Formation = ({ refFormation }) => (
       <div className="formations__details">
         <h2 className="formations__details__h2">Chef Monteur de niveau 3</h2>
         <h3 className="formations__details__h3">Insitut de l'Image et du Son (3iS) - 2010 à 2013</h3>
-        <ul>
-          <li className="formations__details__li">Montage</li>
-          <li className="formations__details__li">Prise et traitement Son</li>
-          <li className="formations__details__li">Post-production</li>
-          <li className="formations__details__li">Image (lumière, caméra)</li>
+        <ul className="formations__details__ul">
+          <li className="formations__details__li">Montage.</li>
+          <li className="formations__details__li">Post-production.</li>
+          <li className="formations__details__li">Prise et traitement Son.</li>
+          <li className="formations__details__li">Image (lumière, caméra).</li>
         </ul>
       </div>
 
@@ -34,7 +41,7 @@ const Formation = ({ refFormation }) => (
       <div className="formations__details">
         <h2 className="formations__details__h2">Bacalauréat</h2>
         <h3 className="formations__details__h3">EABJM - 2006 à 2009</h3>
-        <ul>
+        <ul className="formations__details__ul">
           <li className="formations__details__li">BAC L option philosophie / anglais.</li>
         </ul>
       </div>
