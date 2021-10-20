@@ -24,17 +24,22 @@
 .formations__details{
   margin: 1.5rem;
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 33%;
 
   &__h2{
     font-size: 1.5rem;
     padding-bottom: 1.2rem;
     color: cornflowerblue;
     font-weight: bold;
+    text-align: center;
   }
 
   &__h3{
     font-size: 1.2rem;
-    margin-bottom: 1.3rem;
+    margin-bottom: 3rem;
+    text-align: center;
 
   }
 
@@ -45,10 +50,13 @@
 
   &__p{
     padding-bottom: 1.8rem;
-    width: 40%;
     text-justify: auto;
     line-height: 220%;
     text-align: justify;
+  }
+
+  &__li{
+    padding-bottom: 1.5rem;
   }
 
   &__transition{
@@ -56,3 +64,6 @@
   }
 }
 
+.bold{
+  font-weight: bold;
+}

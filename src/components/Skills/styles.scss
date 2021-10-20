@@ -4,7 +4,7 @@
 
   &__title{
     padding-top: 5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     text-transform: uppercase;
     font-weight: bold;
     margin-left: 2rem;
@@ -22,35 +22,31 @@
 }
 
 .skills__detail{
-  margin: 1.5rem;
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 
   &__h2{
     font-size: 1.5rem;
     padding-bottom: 1.2rem;
     color: cornflowerblue;
     font-weight: bold;
-  }
-
-  &__h3{
-    font-size: 1.2rem;
-    margin-bottom: 1.3rem;
-
+    text-align: center;
   }
 
   &__logo_display{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     align-content: flex-start;
-    margin-top: 4rem;
+    margin-top: 2rem;
 
   }
 
   &__li_logo{
-    display: inline;
+    display: flex;
     padding: 10px;
   }
 
