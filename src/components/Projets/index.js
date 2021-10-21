@@ -14,11 +14,12 @@ const Projets = ({ refProjets }) => (
 
       <div className="projet__detail__card">
         <a href="https://evadia.tech" target="_blank" rel="noreferrer">
-          <img src={logo} alt="logo evadia" className="projet__detail__card__img" />
+          <img src={logo} alt="logo evadia" className="projet__detail__card__evadia" />
         </a>
         <div className="projet__detail__card__text">
           <h2 className="projet__detail__h2">Evadia</h2>
-          <p className="projet__detail__p">Projet de fin d'étude O'Clock.</p>
+          <div className="projet__detail__h2__inner">&nbsp;</div>
+          <h3 className="projet__detail__h3">Projet de fin d'étude O'Clock.</h3>
           <p className="projet__detail__p">Trouver la ville de votre rêve selon vos critères !</p>
           <a href="https://github.com/O-clock-Uther/projet-15-on-demenage" target="_blank" rel="noreferrer">
             <img src={github} alt="logo github" className="projet__detail__card__github" />
@@ -28,11 +29,12 @@ const Projets = ({ refProjets }) => (
 
       <div className="projet__detail__card">
         <a href="https://o-detectiv.herokuapp.com/" target="_blank" rel="noreferrer">
-          <img src={detectiv} alt="logo odetctiv" className="projet__detail__card__img__detectiv" />
+          <img src={detectiv} alt="logo odetctiv" className="projet__detail__card__detectiv" />
         </a>
         <div className="projet__detail__card__text">
           <h2 className="projet__detail__h2">O'Detectiv</h2>
-          <p className="projet__detail__p">Projet test NodeJS</p>
+          <div className="projet__detail__h2__inner">&nbsp;</div>
+          <h3 className="projet__detail__h3">Projet test NodeJS</h3>
           <p className="projet__detail__p">Un exercice SQL enrobé dans une histoire trépidante !</p>
           <a href="https://github.com/Clementkieken/odetectiv" target="_blank" rel="noreferrer">
             <img src={github} alt="logo github" className="projet__detail__card__github" />
@@ -42,11 +44,12 @@ const Projets = ({ refProjets }) => (
 
       <div className="projet__detail__card">
         <a href="https://soundboard-tony-ank7hej9l-clementkieken.vercel.app/html" target="_blank" rel="noreferrer">
-          <img src={soundboard} alt="logo soundboard" className="projet__detail__card__img__soundboard" />
+          <img src={soundboard} alt="logo soundboard" className="projet__detail__card__soundboard" />
         </a>
         <div className="projet__detail__card__text">
           <h2 className="projet__detail__h2">Soundboard Tony</h2>
-          <p className="projet__detail__p">Projet test JS</p>
+          <div className="projet__detail__h2__inner">&nbsp;</div>
+          <h3 className="projet__detail__h3">Projet test JS</h3>
           <p className="projet__detail__p">Un hommage à notre cher professeur de JavaScript, Tony Tiratay !</p>
           <a href="https://github.com/Clementkieken/Soundboard_Tony" target="_blank" rel="noreferrer">
             <img src={github} alt="logo github" className="projet__detail__card__github" />

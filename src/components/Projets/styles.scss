@@ -18,26 +18,76 @@
   align-content: center;
 
   &__card{
-    border: solid 2px black;
+    text-align: center;
+    // border: solid 2px black;
+    padding-bottom: 2rem;
+    flex: 1;
 
-    &__img{
-      width: 20%;
-
-      &__detectiv{
-        width: 40%;
+    &__evadia{
+      width: 30%;
+      transition: all .2s ease-in;
       }
 
+      &__evadia:hover{
+        transform: scale(1.2);
       }
-      &__soundboard{
-        width: 30%;
+
+    &__detectiv{
+      width: 40%;
+      border-radius: 5%;
+      transition: all .2s ease-in;
       }
-    }
+
+      &__detectiv:hover{
+        transform: scale(1.2);
+      }
+
+    &__soundboard{
+      width: 38%;
+      border-radius: 5%;
+      transition: all .2s ease-in;
+      }
+
+      &__soundboard:hover{
+        transform: scale(1.2);
+      }
 
     &__github{
-      width: 2%;
+      padding-top: 1.5rem;
+      width: 10%;
+      transition: all .2s ease-in;
+    }
+
+    &__github:hover{
+      transform: scale(1.2);
+    }
 
     &__text{
       text-align: center;
     }
+  }
+
+  &__h2{
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+    padding-top: 3rem;
+    font-weight: bold;
+
+    &__inner{
+      width: 60%;
+      height: 1px;
+      margin: 0px auto;
+      border-bottom: 1px solid #969696;
+    }
+  }
+
+&__h3{
+  font-size: 1.2rem;
+  padding-top: 1.5rem;
+}
+
+  &__p{
+    padding-top: 1rem;
+    font-style: italic;
   }
 }

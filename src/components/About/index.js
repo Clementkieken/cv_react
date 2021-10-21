@@ -7,8 +7,12 @@ const About = ({ refAbout }) => (
   <div className="about__main" ref={refAbout}>
     <div className="about__profil">
       <h1 className="about__h1">Clément <span className="about__h1_name">KIEKEN</span></h1>
-      <h2 className="about__h2">Développeur web / Monteur audiovisuel</h2>
-      <img className="about__img" src={moipp} alt="profil" />
+      <h2 className="about__h2">Développeur FrontEnd / Monteur audiovisuel</h2>
+      <div className="about__img">
+        <a href="https://github.com/Clementkieken" target="_blank" rel="noreferrer">
+          <img className="about__img" src={moipp} alt="profil" />
+        </a>
+      </div>
     </div>
     <div className="about__p">
       <p>Après une petite dizaine d'années dans le monde de l'audiovisuel en tant que Chef monteur, réalisateur, cadreur et manager de contenu, j'ai décidé en 2020 de me renconvertir dans le développement web.
