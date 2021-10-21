@@ -13,13 +13,13 @@ const Formation = ({ refFormation }) => (
         <div className="formations__details_paragraphe">
           <ul className="formations__details_ul">
             <li className="formations__details__li"><IoChevronForward /> <span className="bold">798 h</span> intensives.</li>
-            <li className="formations__details__li"><IoChevronForward /> <span className="bold">3 mois</span> de Socle: HTML5/CSS3/PHP/Javascript.</li>
+            <li className="formations__details__li"><IoChevronForward /> <span className="bold">3 mois</span> de Socle: HTML5 / CSS3 / Javascript / NodeJS / PostgreSQL.</li>
             <li className="formations__details__li"><IoChevronForward /> <span className="bold">1 mois</span> de spécialisation en React.</li>
             <li className="formations__details__li"><IoChevronForward /> <span className="bold">1 mois</span> de projet.</li>
           </ul>
           <p className="formations__details__p"> Pendant <span className="bold">3 mois</span> nous avons appris les bases du code avec comme langage principal <span className="bold">JavaScript</span> que ce soit en front (JS Vanilla) ou en back (<span className="bold">NodeJS</span> mais aussi la BDD avec <span className="bold">PostgreSQL</span>). Chaque jour nous avons appris de nouvelles notions et le soir nous avions des exercices concernant à la fois les notions du jour et également une notion à découvrir par nous même afin de nous familiariser avec la recherche sur la documentation.</p>
           <p className="formations__details__p">Puis pendant un mois nous nous sommes spécialisés en spé <span className="bold">React</span> où nous avons vu également <span className="bold">Redux</span>.</p>
-          <p className="formations__details__p">Enfin, lors du dernier mois, nous nous sommes séparés en plusieurs groupe de 4 à 5 étudiant où nous avons créé un site web responsive mobile. Notre projet, <span className="formations__details__evadia"><a href="evadia.tech">Evadia</a></span>, condense de multiples API des communes française en une, afin d'obtenir toutes les informations nécessaires quand vous déménagez ou partez en week-end dans un lieu. Voir les détails dans l'onglet Projets.</p>
+          <p className="formations__details__p">Enfin, lors du dernier mois, nous nous sommes séparés en plusieurs groupe de 4 à 5 étudiant où nous avons créé un site web responsive mobile. Notre projet, <span className="formations__details__evadia"><a href="https://evadia.tech" target="_blank" rel="noreferrer">Evadia</a></span>, condense de multiples API des communes française en une, afin d'obtenir toutes les informations nécessaires quand vous déménagez ou partez en week-end dans un lieu. Voir les détails dans l'onglet Projets.</p>
         </div>
       </div>
 

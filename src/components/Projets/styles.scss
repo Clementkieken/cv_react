@@ -10,21 +10,31 @@
     font-size: 2.5rem;
     color: rgb(37, 10, 133);
   }
+
+  &__category{
+    font-size: 2rem;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+    cursor: pointer;
+  }
 }
 
 .projet__detail{
   display: flex;
   justify-content: space-around;
   align-content: center;
+  flex-wrap: wrap;
+  transition: all .5s ease-in-out;
 
   &__card{
+
     text-align: center;
     // border: solid 2px black;
     padding-bottom: 2rem;
     flex: 1;
 
     &__evadia{
-      width: 30%;
+      width: 25%;
       transition: all .2s ease-in;
       }
 
@@ -33,7 +43,7 @@
       }
 
     &__detectiv{
-      width: 40%;
+      width: 35%;
       border-radius: 5%;
       transition: all .2s ease-in;
       }
@@ -43,7 +53,7 @@
       }
 
     &__soundboard{
-      width: 38%;
+      width: 33%;
       border-radius: 5%;
       transition: all .2s ease-in;
       }
@@ -91,3 +101,28 @@
     font-style: italic;
   }
 }
+
+.projet__youtube{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 80px;
+  grid-row-gap: 80px;
+
+  &__card{
+    text-align: center;
+    padding-bottom: 6rem;
+    flex: 1;
+  }
+}
+
+.dropdown__button{
+  &__arrow{
+    transition: transform 0.3s;
+
+    &__animation{
+      transform: rotateZ(180deg);
+    }
+  }
+}
+
