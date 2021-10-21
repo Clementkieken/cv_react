@@ -7,8 +7,21 @@ const Experiences = ({ refExperiences }) => (
     <h1 className="experiences__main__title">Expériences</h1>
 
     <div className="experiences__detail">
+      <h2 className="experiences__detail__h2">Product Owner & Développeur FrontEnd</h2>
+      <h3 className="experiences__detail__h3"><a href="https://evadia.tech" target="_blank" rel="noopener noreferrer" className="experiences__detail__h3__link">Evadia</a> (<a href="https://oclock.io/" target="_blank" rel="noopener noreferrer" className="experiences__detail__h3__link">O'Clock</a>) -
+        <span className="experiences__detail__h3__date"> Septembre à Octobre 2021</span>
+      </h3>
+      <ul className="experiences__detail__ul">
+        <li className="experiences__detail__li">Prise de décision UI et UX.</li>
+        <li className="experiences__detail__li">Développement des components React en binôme.</li>
+        <li className="experiences__detail__li">Développement de quelques fonctionnalités React.</li>
+        <li className="experiences__detail__li">Présentation du projet pour client.</li>
+      </ul>
+    </div>
+
+    <div className="experiences__detail">
       <h2 className="experiences__detail__h2">Monteur</h2>
-      <h3 className="experiences__detail__h3">Webedia -
+      <h3 className="experiences__detail__h3"><a href="https://fr.webedia-group.com/" target="_blank" rel="noopener noreferrer" className="experiences__detail__h3__link">Webedia</a> -
         <span className="experiences__detail__h3__date"> 2020 à février 2021</span>
       </h3>
       <p className="experiences__detail__p">Dérushage, montage et habillage de capsule pour le département événement (event BNP).</p>
@@ -16,7 +29,7 @@ const Experiences = ({ refExperiences }) => (
 
     <div className="experiences__detail">
       <h2 className="experiences__detail__h2">Content Coordination Manager</h2>
-      <h3 className="experiences__detail__h3">PGS -
+      <h3 className="experiences__detail__h3"><a href="https://pgsentertainment.com/" target="_blank" rel="noopener noreferrer" className="experiences__detail__h3__link"> PGS</a> -
         <span className="experiences__detail__h3__date"> Juillet 2019 à janvier 2020</span>
       </h3>
       <ul className="experiences__detail__ul">
@@ -29,7 +42,7 @@ const Experiences = ({ refExperiences }) => (
 
     <div className="experiences__detail">
       <h2 className="experiences__detail__h2">Content Coordination Manager</h2>
-      <h3 className="experiences__detail__h3">Marc Dorcel Groupe
+      <h3 className="experiences__detail__h3"><a href="https://www.dorcelgroup.com/" target="_blank" rel="noopener noreferrer" className="experiences__detail__h3__link"> Marc Dorcel Groupe</a>
         <span className="experiences__detail__h3__date"> - Juillet 2017 à juillet 2019</span>
       </h3>
       <ul className="experiences__detail__ul">
@@ -45,7 +58,7 @@ const Experiences = ({ refExperiences }) => (
 
     <div className="experiences__detail">
       <h2 className="experiences__detail__h2">Monteur / Réalisateur / Cadreur</h2>
-      <h3 className="experiences__detail__h3">Auto-entrepreneur
+      <h3 className="experiences__detail__h3"><a href="https://www.youtube.com/user/clementkieken" target="_blank" rel="noopener noreferrer" className="experiences__detail__h3__link"> Auto-entrepreneur</a>
         <span className="experiences__detail__h3__date"> - 2015 à 2017</span>
       </h3>
       <ul className="experiences__detail__ul">

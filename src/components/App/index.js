@@ -11,6 +11,7 @@ import Experiences from '../Experiences';
 import Formation from '../Formation';
 import Skills from '../Skills';
 import Projets from '../Projets';
+import Contact from '../Contact';
 
 // == Composant
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
   const refFormation = useRef();
   const refSkills = useRef();
   const refProjets = useRef();
+  const refContact = useRef();
 
   return (
     <div className="app">
@@ -29,12 +31,14 @@ const App = () => {
         refFormation={refFormation}
         refSkills={refSkills}
         refProjets={refProjets}
+        refContact={refContact}
       />
       <About refAbout={refAbout} />
       <Experiences refExperiences={refExperiences} />
       <Formation refFormation={refFormation} />
       <Skills refSkills={refSkills} />
       <Projets refProjets={refProjets} />
+      <Contact refContact={refContact} />
 
     </div>
   );

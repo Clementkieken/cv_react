@@ -1,0 +1,50 @@
+.contact__main{
+    min-height: 100vh;
+    background-color: rgb(219, 226, 239);
+
+    &__title{
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-left: 2rem;
+        font-size: 2.5rem;
+        color: rgb(37, 10, 133);
+      }
+}
+
+.contact__details{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+    width: 60%;
+    margin: auto;
+
+    &__email{
+        width: 20%;
+        transition: all .2s ease-in;
+    }
+
+    &__email:hover{
+        transform: scale(1.1);
+    }
+
+    &__linkedin{
+        width: 20%;
+        transition: all .2s ease-in;
+    }
+    
+    &__linkedin:hover{
+        transform: scale(1.1);
+    }
+
+    &__github{
+    transition: all .2s ease-in;
+    }
+
+    &__github:hover{
+        transform: scale(1.1);
+    }
+
+}

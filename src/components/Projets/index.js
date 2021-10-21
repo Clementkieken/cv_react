@@ -74,7 +74,7 @@ const Projets = ({ refProjets }) => {
         </div>
 
       )}
-      <div className="projet__main__category" onClick={() => setIsYouTubeOpen((old) => !old)}>YouTube <IoChevronDownOutline className={` dropdown__button__arrow ${isYouTubeOpen ? 'dropdown__button__arrow__animation' : ''}`} /></div>
+      <div className="projet__main__category" onClick={() => setIsYouTubeOpen((old) => !old)}>Audiovisuel <IoChevronDownOutline className={` dropdown__button__arrow ${isYouTubeOpen ? 'dropdown__button__arrow__animation' : ''}`} /></div>
 
       {isYouTubeOpen && (
 

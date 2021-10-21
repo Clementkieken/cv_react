@@ -81,6 +81,20 @@ const Navbar = ({
         </li>
       </div>
 
+      <div
+        className="menu__item_one"
+        onClick={() => {
+          const { top } = refProjets.current.getBoundingClientRect();
+          window.scrollTo({ top, behavior: 'smooth' });
+        }}
+      >
+        <li
+          className="menu__li"
+        >
+          Contact
+        </li>
+      </div>
+
     </ul>
   </nav>
 );
