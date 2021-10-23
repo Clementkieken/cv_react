@@ -11,7 +11,7 @@ import github from '../../../public/img/github.ico';
 import soundboard from '../../../public/img/soundboard.jpg';
 
 const Projets = ({ refProjets }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [isYouTubeOpen, setIsYouTubeOpen] = useState(false);
 
   return (

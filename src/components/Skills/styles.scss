@@ -46,6 +46,11 @@
 
   }
 
+  // &__dev__logo{
+  //   width: 24px !important;
+  //   height: 24px !important;
+  // }
+  
 &__ul{
   display: flex;
   flex-wrap:wrap;
@@ -60,6 +65,7 @@
     display: flex;
     padding-right: 2rem;
     padding-bottom: 2rem;
+
   }
 
   &__transition{

@@ -43,7 +43,7 @@ const Navbar = ({
         className="menu__item_one"
         onClick={() => {
           const { top } = refFormation.current.getBoundingClientRect();
-          window.scrollTo({ top, behavior: 'smooth' });
+          window.scrollTo({ top: (top - 88), behavior: 'smooth' });
         }}
       >
         <li
@@ -57,7 +57,7 @@ const Navbar = ({
         className="menu__item_one"
         onClick={() => {
           const { top } = refSkills.current.getBoundingClientRect();
-          window.scrollTo({ top, behavior: 'smooth' });
+          window.scrollTo({ top: (top - 80), behavior: 'smooth' });
         }}
       >
         <li
@@ -71,7 +71,7 @@ const Navbar = ({
         className="menu__item_one"
         onClick={() => {
           const { top } = refProjets.current.getBoundingClientRect();
-          window.scrollTo({ top, behavior: 'smooth' });
+          window.scrollTo({ top: (top - 80), behavior: 'smooth' });
         }}
       >
         <li
@@ -85,7 +85,7 @@ const Navbar = ({
         className="menu__item_one"
         onClick={() => {
           const { top } = refProjets.current.getBoundingClientRect();
-          window.scrollTo({ top, behavior: 'smooth' });
+          window.scrollTo({ top: (top - 88), behavior: 'smooth' });
         }}
       >
         <li
