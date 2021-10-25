@@ -19,9 +19,16 @@
 
 
 .experiences__detail{
-  margin: 2rem;
+margin-left: 25%;
+margin-top: 5%;
   padding: 1rem;
-  display: flex;
+  // display: flex;
+  display: grid;
+  grid-template-columns: 10% 80%;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: stretch;
+  align-items: center;
 
 
   &__text{
@@ -92,10 +99,6 @@
     transform: scale(1.2);
   }
 
-  &__millenium{
-    width: 5%;
-    height: 5%;
-  }
 
   &__category{
     font-size: 1.2rem;
@@ -105,3 +108,12 @@
   }
 }
 
+.experience__grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  // grid-column-gap: 5%;
+  // grid-row-gap: 5%;
+  justify-items: stretch;
+  align-items: center;
+}
