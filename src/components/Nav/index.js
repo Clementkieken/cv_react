@@ -1,103 +1,106 @@
 // import { NavLink } from 'react-router-dom';
 // import About from '../About';
 import './styles.scss';
+import { useRef } from 'react';
 import PropTypes from 'prop-types';
 
 const Navbar = ({
-  refAbout, refExperiences, refFormation, refSkills, refProjets,
-}) => (
-  <nav className="menu">
-    <ul className="menu__items">
+  refAbout, refExperiences, refFormation, refSkills, refProjets, refContact,
+}) => {
+  const navBanner = useRef();
+  return (
+    <nav className="menu" ref={navBanner}>
+      <ul className="menu__items">
 
-      <div
-        className="menu__item_one"
-        onClick={() => {
-          const { top } = refAbout.current.getBoundingClientRect();
-          window.scrollTo({ top, behavior: 'smooth' });
-        }}
-      >
-        <li
-          className="menu__li"
+        <div
+          className="menu__item_one"
+          onClick={() => {
+            const top = refAbout.current.offsetTop;
+            window.scrollTo({ top: (top - navBanner.current.getBoundingClientRect().height), behavior: 'smooth' });
+          }}
         >
-          A propos
-        </li>
-      </div>
+          <li
+            className="menu__li"
+          >
+            A propos
+          </li>
+        </div>
 
-      <div
-        className="menu__item_one"
-        onClick={() => {
-          const { top } = refExperiences.current.getBoundingClientRect();
-          window.scrollTo({ top: (top - 88), behavior: 'smooth' });
+        <div
+          className="menu__item_one"
+          onClick={() => {
+            const top = refExperiences.current.offsetTop;
+            window.scrollTo({ top: (top - navBanner.current.getBoundingClientRect().height), behavior: 'smooth' });
           // Le -88 sert à décaler le component pour ne pas qu'il soit caché par la navBar
-        }}
-      >
-        <li
-          className="menu__li"
-
+          }}
         >
-          Experiences
-        </li>
-      </div>
+          <li
+            className="menu__li"
+          >
+            Experiences
+          </li>
+        </div>
 
-      <div
-        className="menu__item_one"
-        onClick={() => {
-          const { top } = refFormation.current.getBoundingClientRect();
-          window.scrollTo({ top: (top - 88), behavior: 'smooth' });
-        }}
-      >
-        <li
-          className="menu__li"
+        <div
+          className="menu__item_one"
+          onClick={() => {
+            const top = refFormation.current.offsetTop;
+            window.scrollTo({ top: (top - navBanner.current.getBoundingClientRect().height), behavior: 'smooth' });
+          }}
         >
-          Formation
-        </li>
-      </div>
+          <li
+            className="menu__li"
+          >
+            Formation
+          </li>
+        </div>
 
-      <div
-        className="menu__item_one"
-        onClick={() => {
-          const { top } = refSkills.current.getBoundingClientRect();
-          window.scrollTo({ top: (top - 80), behavior: 'smooth' });
-        }}
-      >
-        <li
-          className="menu__li"
+        <div
+          className="menu__item_one"
+          onClick={() => {
+            const top = refSkills.current.offsetTop;
+            window.scrollTo({ top: (top - navBanner.current.getBoundingClientRect().height), behavior: 'smooth' });
+          }}
         >
-          Compétences
-        </li>
-      </div>
+          <li
+            className="menu__li"
+          >
+            Compétences
+          </li>
+        </div>
 
-      <div
-        className="menu__item_one"
-        onClick={() => {
-          const { top } = refProjets.current.getBoundingClientRect();
-          window.scrollTo({ top: (top - 80), behavior: 'smooth' });
-        }}
-      >
-        <li
-          className="menu__li"
+        <div
+          className="menu__item_one"
+          onClick={() => {
+            const top = refProjets.current.offsetTop;
+            window.scrollTo({ top: (top - navBanner.current.getBoundingClientRect().height), behavior: 'smooth' });
+          }}
         >
-          Projets
-        </li>
-      </div>
+          <li
+            className="menu__li"
+          >
+            Projets
+          </li>
+        </div>
 
-      <div
-        className="menu__item_one"
-        onClick={() => {
-          const { top } = refProjets.current.getBoundingClientRect();
-          window.scrollTo({ top: (top - 88), behavior: 'smooth' });
-        }}
-      >
-        <li
-          className="menu__li"
+        <div
+          className="menu__item_one"
+          onClick={() => {
+            const top = refContact.current.offsetTop;
+            window.scrollTo({ top: (top - navBanner.current.getBoundingClientRect().height), behavior: 'smooth' });
+          }}
         >
-          Contact
-        </li>
-      </div>
+          <li
+            className="menu__li"
+          >
+            Contact
+          </li>
+        </div>
 
-    </ul>
-  </nav>
-);
+      </ul>
+    </nav>
+  );
+};
 
 export default Navbar;
 
@@ -107,4 +110,5 @@ Navbar.propTypes = {
   refFormation: PropTypes.object.isRequired,
   refSkills: PropTypes.object.isRequired,
   refProjets: PropTypes.object.isRequired,
+  refContact: PropTypes.object.isRequired,
 };
