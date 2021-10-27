@@ -1,15 +1,16 @@
 .formations{
   min-height: 100vh;
-  background-color: #F9F7F7;
+  background-color: #1d1a1a;
+  color: white;
 
   &__title{
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 2rem;
     text-transform: uppercase;
     font-weight: bold;
     margin-left: 2rem;
     font-size: 2.5rem;
-    color: rgb(37, 10, 133);
+    color: #a12531;
   }
 
   &__all{
@@ -64,13 +65,17 @@
   }
 
   &__transition{
-    border-left: solid black 2px;
+    border-left: solid #a12531 2px;
   }
   
   &__evadia{
     font-weight: bold;
     font-style: italic;
-    color: darkblue;
+    color: #a12531;
+  }
+
+  &__evadia:hover{
+    color: #c02e3d;
   }
 }
 

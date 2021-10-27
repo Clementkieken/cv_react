@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 
 import email from '../../../public/img/email.png';
 import linkedin from '../../../public/img/linkedin.png';
-import github from '../../../public/img/github.ico';
+// import github from '../../../public/img/github.ico';
+import github from '../../../public/img/github_2.png';
 
 const Contact = ({ refContact }) => (
 
@@ -12,20 +13,20 @@ const Contact = ({ refContact }) => (
 
     <div className="contact__details">
 
-      <div>
+      <div className="contact__details__display">
         <a href="mailto:ckieken@protonmail.com" target="_blank" rel="noreferrer">
           <img className="contact__details__email" src={email} alt="logo email" />
         </a>
         {/* <p className="contact__details__p">ckieken@protonmail.com</p> */}
       </div>
 
-      <div>
+      <div className="contact__details__display">
         <a href="https://www.linkedin.com/in/clement-kieken-1504b168/" target="_blank" rel="noreferrer">
           <img className="contact__details__linkedin" src={linkedin} alt="logo linkedin" />
         </a>
       </div>
 
-      <div>
+      <div className="contact__details__display">
         <a href="https://github.com/Clementkieken" target="_blank" rel="noreferrer">
           <img className="contact__details__github" src={github} alt="logo github" />
         </a>

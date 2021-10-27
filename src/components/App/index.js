@@ -12,6 +12,7 @@ import Formation from '../Formation';
 import Skills from '../Skills';
 import Projets from '../Projets';
 import Contact from '../Contact';
+import Footer from '../Footer';
 
 // == Composant
 const App = () => {
@@ -39,6 +40,7 @@ const App = () => {
       <Skills refSkills={refSkills} />
       <Projets refProjets={refProjets} />
       <Contact refContact={refContact} />
+      <Footer />
 
     </div>
   );

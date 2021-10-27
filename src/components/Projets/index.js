@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import { useState } from 'react';
 
 import PropTypes from 'prop-types';
@@ -74,6 +75,9 @@ const Projets = ({ refProjets }) => {
         </div>
 
       )}
+
+      <div className="projet__transition" />
+
       <div className="projet__main__category" onClick={() => setIsYouTubeOpen((old) => !old)}>Audiovisuel <IoChevronDownOutline className={` dropdown__button__arrow ${isYouTubeOpen ? 'dropdown__button__arrow__animation' : ''}`} /></div>
 
       {isYouTubeOpen && (
@@ -81,7 +85,17 @@ const Projets = ({ refProjets }) => {
       <div className="projet__youtube">
 
         <div className="projet__youtube__card">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/BX7jTEyCAzI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+          <iframe width="400" height="225" src="https://player.vimeo.com/video/639558298?h=0cbc81d7de&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen />
+          <div className="projet__detail__card__text">
+            <h2 className="projet__detail__h2">Life & Dream</h2>
+            <div className="projet__detail__h2__inner">&nbsp;</div>
+            <h3 className="projet__detail__h3">2018</h3>
+            <p className="projet__detail__p">Teaser pour le lancement de la chaîne Playboy TV Europe.</p>
+          </div>
+        </div>
+
+        <div className="projet__youtube__card">
+          <iframe width="400" height="225" src="https://www.youtube.com/embed/BX7jTEyCAzI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
           <div className="projet__detail__card__text">
             <h2 className="projet__detail__h2">Bande Démo</h2>
             <div className="projet__detail__h2__inner">&nbsp;</div>
@@ -91,52 +105,42 @@ const Projets = ({ refProjets }) => {
         </div>
 
         <div className="projet__youtube__card">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Mu_hTKmQUuY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+          <iframe width="400" height="225" src="https://www.youtube.com/embed/Mu_hTKmQUuY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
           <div className="projet__detail__card__text">
             <h2 className="projet__detail__h2">Une journée avec Shneizel</h2>
             <div className="projet__detail__h2__inner">&nbsp;</div>
-            <h3 className="projet__detail__h3">Coupe de France Street Fighter V</h3>
-            <p className="projet__detail__p">Reportage de notre joueur Shneizel.</p>
+            <h3 className="projet__detail__h3">2017</h3>
+            <p className="projet__detail__p">Reportage sur Shneizel à la Coupe de France Street Fighter V.</p>
           </div>
         </div>
 
         <div className="projet__youtube__card">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/EQN50dT3mD0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
-          <div className="projet__detail__card__text">
-            <h2 className="projet__detail__h2">Mix Trailer FPS</h2>
-            <div className="projet__detail__h2__inner">&nbsp;</div>
-            <h3 className="projet__detail__h3">Mixicom (Cyprien Gaming)</h3>
-            <p className="projet__detail__p">Mélange de 3 trailers de jeux FPS.</p>
-          </div>
-        </div>
-
-        <div className="projet__youtube__card">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/xcccVMY1BMw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
-          <div className="projet__detail__card__text">
-            <h2 className="projet__detail__h2">Je suis un Geste</h2>
-            <div className="projet__detail__h2__inner">&nbsp;</div>
-            <h3 className="projet__detail__h3">Nikon Film Festival 2016</h3>
-            <p className="projet__detail__p">Court métrage de Stanislas Koiransky.</p>
-          </div>
-        </div>
-
-        <div className="projet__youtube__card">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/TSaiYZISFXA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
-          <div className="projet__detail__card__text">
-            <h2 className="projet__detail__h2">Burolab - Versailles</h2>
-            <div className="projet__detail__h2__inner">&nbsp;</div>
-            <h3 className="projet__detail__h3">Institutionnel</h3>
-            <p className="projet__detail__p">Découvrez cet espace co-working de Versailles.</p>
-          </div>
-        </div>
-
-        <div className="projet__youtube__card">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/kQVAjkvORGk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+          <iframe width="400" height="225" src="https://www.youtube.com/embed/kQVAjkvORGk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
           <div className="projet__detail__card__text">
             <h2 className="projet__detail__h2">La Semaine de Retox #26</h2>
             <div className="projet__detail__h2__inner">&nbsp;</div>
-            <h3 className="projet__detail__h3">Émission critique eSport</h3>
-            <p className="projet__detail__p">Dernier épisode de notre chronique.</p>
+            <h3 className="projet__detail__h3">2016</h3>
+            <p className="projet__detail__p">Dernier épisode de notre chronique eSport.</p>
+          </div>
+        </div>
+
+        <div className="projet__youtube__card">
+          <iframe width="400" height="225" src="https://www.youtube.com/embed/xcccVMY1BMw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+          <div className="projet__detail__card__text">
+            <h2 className="projet__detail__h2">Je suis un Geste</h2>
+            <div className="projet__detail__h2__inner">&nbsp;</div>
+            <h3 className="projet__detail__h3">2015</h3>
+            <p className="projet__detail__p">Court métrage de S. Koiransky - Nikon Film Festival.</p>
+          </div>
+        </div>
+
+        <div className="projet__youtube__card">
+          <iframe width="400" height="225" src="https://www.youtube.com/embed/TSaiYZISFXA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+          <div className="projet__detail__card__text">
+            <h2 className="projet__detail__h2">Burolab - Versailles</h2>
+            <div className="projet__detail__h2__inner">&nbsp;</div>
+            <h3 className="projet__detail__h3">2015</h3>
+            <p className="projet__detail__p">Découvrez cet espace co-working de Versailles.</p>
           </div>
         </div>
 
