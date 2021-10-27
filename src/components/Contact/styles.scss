@@ -15,16 +15,11 @@
 
 .contact__details{
 	display: flex;
-	justify-content: center;
-    align-content: center;
-    align-items: center;
-    // width: 60%;
-    // margin: auto;
-
-&__display{
-    flex: 1;
-    justify-content:  center;
-}
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
 
     &__email{
         width: 20%;

@@ -22,11 +22,12 @@
 }
 
 .menu__item_one:hover{
-  background-color: rgb(219, 226, 239);
+  background-color: white;
   -webkit-transform:scale(0.5); /* or some other value */
   transform:scale(1);
   //border-radius: 20px;
   transition:  all 0.5s ease-out;
+  color: black;
 }
 
 .menu{
