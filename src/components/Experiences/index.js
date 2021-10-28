@@ -24,7 +24,7 @@ const Experiences = ({ refExperiences }) => {
     <div className="experiences__main" ref={refExperiences}>
       <h1 className="experiences__main__title">Expériences</h1>
 
-      <div className="experience__flex">
+      <div className="experiences__flex">
         <div className="experiences__detail">
           <div className="experiences__detail__img">
             <a href="https://evadia.tech" target="_blank" rel="noopener noreferrer">

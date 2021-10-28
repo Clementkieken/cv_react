@@ -1,5 +1,5 @@
 // CSS Desktop :
-@media (max-width: 1920px) {
+@media screen and (min-width: 769px){
 
   .about__main{
     min-height: 100vh;
@@ -71,13 +71,18 @@
   
   // CSS MOBILE
   
-  @media (max-width: 480px) {
+  @media screen and (max-width: 768px) {
   
   .about{
   
     &__main{
       display: flex;
       flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      align-content: stretch;
+      background-color: #1d1a1a;
+      color: rgb(241, 241, 241);
     }
   
     &__img{
@@ -85,20 +90,34 @@
     }
   
     &__h1{
-      padding-top: 1rem;
-      padding-bottom: 0rem;
+      font-size: 1.5rem;
+      text-align: center;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+
+      &_name{
+        color: crimson;
+        font-weight: bold;
+      }
     }
+
     &__h2{
-      padding-bottom: 0;
+      padding-bottom: 2rem;
       line-height: 130%;
+      font-size: 1.3rem;
+      text-align: center;
+
     }
   
     &__p{
       width: 90%;
       margin: auto;
-      padding: auto;
+      padding-bottom: 3rem;
       line-height: 200%;
       font-size: 1rem;
+      justify-content: center;
+      text-justify: auto;
+      text-align: justify;
     }
   }
   

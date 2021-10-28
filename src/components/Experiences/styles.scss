@@ -1,22 +1,25 @@
-.experiences__main{
+// CSS Desktop :
+@media screen and (min-width: 769px){
+
+.experiences{
+  &__main{
   min-height: 100vh;
   background-color: rgb(238, 238, 238);
   display: flex;
   flex-direction: column;
 
-
-  &__title{
-  margin-top: 3rem;
-  padding-bottom: 2rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-left: 2rem;
-  font-size: 2.5rem;
-  color: #a12531;
-  }
+    &__title{
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+    color: #a12531;
+    }
 }
 
-.experience__flex{
+&__flex{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -24,70 +27,45 @@
   margin: 0 auto;
   margin-top: 5rem;
 }
-
-.experiences__detail{
-// margin-left: 25%;
-// margin-top: 5%;
-//   padding: 1rem;
-//   // display: flex;
-//   display: grid;
-//   grid-template-columns: 10% 80%;
-//   grid-column-gap: 20px;
-//   grid-row-gap: 20px;
-//   justify-items: stretch;
-//   align-items: center;
-width: 40%;
-display: flex;
-justify-content: space-between;
-margin-bottom: 6rem;
+&__detail{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6rem;
 
   &__text{
-width: 70%;
+    width: 70%;
   
-  &__h2{
-    font-size: 1.5rem;
-    margin-left: 1rem;
-    font-weight: bold;
+    &__h2{
+      font-size: 1.5rem;
+      margin-left: 1rem;
+      font-weight: bold;
+      }
 
-  }
+      &__h3 {
+        font-size: 1.2rem;
+        margin-left: 1.2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding-top: 2rem;
+        padding: 1rem 0rem 1rem 0rem;
 
-  &__h3 {
-    font-size: 1.2rem;
-    margin-left: 1.2rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    padding-top: 2rem;
-    padding: 1rem 0rem 1rem 0rem;
-
-    &__date{
-      font-size: 1.1rem;
-      font-style: italic;
-
+        &__date{
+          font-size: 1.1rem;
+          font-style: italic;
+        }
+      }
+    &__ul{
+      margin-left: 1.5rem;
     }
-
-    &__link:hover{
-      color: rgb(88, 63, 177);
+  
+    &__li{
+      padding-bottom: 1rem;
     }
   }
-
-  &__p{
-    margin-left: 1.5rem;
-
-  }
-
-  &__ul{
-    margin-left: 1.5rem;
-
-  }
-
-  &__li{
-    padding-bottom: 1rem;
-  }
-}
 
   &__img{
     width: 100px;
-
   }
 
   &__logo{
@@ -99,21 +77,102 @@ width: 70%;
     transform: scale(1.2);
   }
 
-
   &__category{
     font-size: 1.2rem;
     padding-left: 1.5rem;
     padding-bottom: 1.5rem;
-    // text-decoration: underline;
   }
+
+}
+}
 }
 
-// .experience__grid{
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   grid-template-rows: 1fr 1fr 1fr;
-//   // grid-column-gap: 5%;
-//   // grid-row-gap: 5%;
-//   justify-items: stretch;
-//   align-items: center;
-// }
+
+// CSS Mobile :
+@media screen and (max-width: 768px) {
+
+  .experiences{
+    &__main{
+    min-height: 100vh;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+  
+      &__title{
+      margin-top: 3rem;
+      padding-bottom: 2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-left: 2rem;
+      font-size: 2.5rem;
+      color: #a12531;
+      }
+  }
+  
+  &__flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+  &__detail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+  
+    &__text{
+      width: 70%;
+    
+      &__h2{
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        font-weight: bold;
+        }
+  
+        &__h3 {
+          font-size: 1.2rem;
+          margin-left: 1.2rem;
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+          padding-top: 2rem;
+          padding: 1rem 0rem 1rem 0rem;
+  
+          &__date{
+            font-size: 1.1rem;
+            font-style: italic;
+          }
+        }
+      &__ul{
+        margin-left: 1.5rem;
+      }
+    
+      &__li{
+        padding-bottom: 1rem;
+      }
+    }
+  
+    &__img{
+      width: 100px;
+    }
+  
+    &__logo{
+      width: 70%;
+      transition: all .2s ease-in;
+    }
+  
+    &__logo:hover{
+      transform: scale(1.2);
+    }
+  
+    &__category{
+      font-size: 1.2rem;
+      padding-left: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+  
+  }
+  }
+  }
