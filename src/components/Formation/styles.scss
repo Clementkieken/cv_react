@@ -1,84 +1,153 @@
-.formations{
-  min-height: 100vh;
-  background-color: #1d1a1a;
-  color: white;
+// CSS Desktop :
+@media screen and (min-width: 769px){
 
-  &__title{
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    text-transform: uppercase;
+  .formations{
+    min-height: 100vh;
+    background-color: #1d1a1a;
+    color: white;
+
+    &__title{
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-left: 2rem;
+      font-size: 2.5rem;
+      color: #a12531;
+    }
+
+    &__all{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-content: stretch;
+    }
+
+    &__details{
+      margin: 1.5rem;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      width: 33%;
+    
+      &__h2{
+        font-size: 1.5rem;
+        padding-bottom: 1.2rem;
+        color: cornflowerblue;
+        font-weight: bold;
+        text-align: center;
+      }
+    
+      &__h3{
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    
+      }
+    
+      &__p{
+        padding-bottom: 1.8rem;
+        text-justify: auto;
+        line-height: 220%;
+        text-align: justify;
+      }
+    
+      &__ul{
+      text-align: center;
+      }
+    
+      &__li{
+        padding-bottom: 1.5rem;
+      }
+    
+      &__transition{
+        border-left: solid #a12531 2px;
+      }
+      
+      &__evadia{
+        font-weight: bold;
+        font-style: italic;
+        color: #a12531;
+      }
+    
+      &__evadia:hover{
+        color: #c02e3d;
+      }
+    }
+  }
+
+  .bold{
     font-weight: bold;
-    margin-left: 2rem;
-    font-size: 2.5rem;
-    color: #a12531;
-  }
-
-  &__all{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-content: stretch;
   }
 }
 
-.formations__details{
-  margin: 1.5rem;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  width: 33%;
+// CSS Mobile :
+@media screen and (max-width: 768px) {
 
-  &__h2{
-    font-size: 1.5rem;
-    padding-bottom: 1.2rem;
-    color: cornflowerblue;
+  .formations{
+    min-height: 100vh;
+    background-color: #1d1a1a;
+    color: white;
+
+    &__title{
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-left: 2rem;
+      font-size: 1.5rem;
+      color: #a12531;
+    }
+
+    &__all{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: stretch;
+    }
+
+    &__details{
+      margin: auto;
+      padding: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 90%;
+    
+      &__h2{
+        font-size: 1.2rem;
+        padding-bottom: 1.2rem;
+        color: cornflowerblue;
+        font-weight: bold;
+        // text-align: center;
+      }
+    
+      &__h3{
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+        // text-align: center;
+    
+      }
+    
+      &__p{
+        display: none;
+      }
+       
+      &__li{
+        padding-bottom: 1.5rem;
+      }
+    
+      &__transition{
+        border-left: solid #a12531 2px;
+      }
+      
+    }
+  }
+
+  .bold{
     font-weight: bold;
-    text-align: center;
   }
 
-  &__h3{
-    font-size: 1.2rem;
-    margin-bottom: 3rem;
-    text-align: center;
-
-  }
-
-  // &__paragraphe{
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-
-  &__p{
-    padding-bottom: 1.8rem;
-    text-justify: auto;
-    line-height: 220%;
-    text-align: justify;
-  }
-
-&__ul{
- text-align: center;
-}
-
-  &__li{
-    padding-bottom: 1.5rem;
-  }
-
-  &__transition{
-    border-left: solid #a12531 2px;
-  }
-  
-  &__evadia{
-    font-weight: bold;
-    font-style: italic;
-    color: #a12531;
-  }
-
-  &__evadia:hover{
-    color: #c02e3d;
-  }
-}
-
-.bold{
-  font-weight: bold;
-}
+}  

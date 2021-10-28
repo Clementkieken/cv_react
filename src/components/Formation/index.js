@@ -46,6 +46,7 @@ const Formation = ({ refFormation }) => (
         </ul>
       </div>
     </div>
+
   </div>
 );
 
