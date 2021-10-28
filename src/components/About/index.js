@@ -2,13 +2,9 @@
 import './styles.scss';
 import PropTypes from 'prop-types';
 import moipp from '../../../public/img/ck_super_dev.jpg';
-// import video from '../../../public/video/video_bckgrnd.mp4';
 
 const About = ({ refAbout }) => (
   <div className="about__main" ref={refAbout}>
-    {/* <video id="background_video" loop autoPlay>
-      <source src={video} type="video/mp4" />
-        </video> */}
     <div className="about__profil">
       <h1 className="about__h1">Clément <span className="about__h1_name">KIEKEN</span></h1>
       <h2 className="about__h2">Développeur FrontEnd / Monteur audiovisuel</h2>
