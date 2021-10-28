@@ -24,11 +24,13 @@ const Experiences = ({ refExperiences }) => {
     <div className="experiences__main" ref={refExperiences}>
       <h1 className="experiences__main__title">Expériences</h1>
 
-      <div className="experience__grid">
+      <div className="experience__flex">
         <div className="experiences__detail">
-          <a href="https://evadia.tech" target="_blank" rel="noopener noreferrer">
-            <img className="experiences__detail__webedia" src={evadia} alt="evadia logo" />
-          </a>
+          <div className="experiences__detail__img">
+            <a href="https://evadia.tech" target="_blank" rel="noopener noreferrer">
+              <img className="experiences__detail__logo" src={evadia} alt="evadia logo" />
+            </a>
+          </div>
           <div className="experiences__detail__text">
             <h2 className="experiences__detail__text__h2">Product Owner & Développeur FrontEnd</h2>
             <h3 className="experiences__detail__text__h3">Evadia (<a href="https://oclock.io/" target="_blank" rel="noopener noreferrer" className="experiences__detail__h3__link">O'Clock</a>) -
@@ -46,14 +48,17 @@ const Experiences = ({ refExperiences }) => {
               <li className="experiences__detail__text__li">• Présentation du projet pour client.</li>
             </ul>
             )}
+
           </div>
 
         </div>
 
         <div className="experiences__detail">
-          <a href="https://fr.webedia-group.com/" target="_blank" rel="noopener noreferrer" className="experiences__detail__h3__link">
-            <img className="experiences__detail__webedia" src={webedia} alt="webedia logo" />
-          </a>
+          <div className="experiences__detail__img">
+            <a href="https://fr.webedia-group.com/" target="_blank" rel="noopener noreferrer" className="experiences__detail__h3__link">
+              <img className="experiences__detail__logo" src={webedia} alt="webedia logo" />
+            </a>
+          </div>
           <div className="experiences__detail__text">
             <h2 className="experiences__detail__text__h2">Monteur</h2>
             <h3 className="experiences__detail__text__h3">Webedia -
@@ -70,9 +75,11 @@ const Experiences = ({ refExperiences }) => {
         </div>
 
         <div className="experiences__detail">
-          <a href="https://pgsentertainment.com/" target="_blank" rel="noopener noreferrer" className="experiences__detail__h3__link">
-            <img className="experiences__detail__webedia" src={pgs} alt="pgs logo" />
-          </a>
+          <div className="experiences__detail__img">
+            <a href="https://pgsentertainment.com/" target="_blank" rel="noopener noreferrer" className="experiences__detail__h3__link">
+              <img className="experiences__detail__logo" src={pgs} alt="pgs logo" />
+            </a>
+          </div>
           <div className="experiences__detail__text">
             <h2 className="experiences__detail__text__h2">Content Coordination Manager</h2>
             <h3 className="experiences__detail__text__h3">PGS -
@@ -94,9 +101,11 @@ const Experiences = ({ refExperiences }) => {
         </div>
 
         <div className="experiences__detail">
-          <a href="https://www.dorcelgroup.com/" target="_blank" rel="noopener noreferrer" className="experiences__detail__h3__link">
-            <img className="experiences__detail__webedia" src={dorcel} alt="dorcel logo" />
-          </a>
+          <div className="experiences__detail__img">
+            <a href="https://www.dorcelgroup.com/" target="_blank" rel="noopener noreferrer" className="experiences__detail__h3__link">
+              <img className="experiences__detail__logo" src={dorcel} alt="dorcel logo" />
+            </a>
+          </div>
           <div className="experiences__detail__text">
             <h2 className="experiences__detail__text__h2">Content Coordination Manager</h2>
             <h3 className="experiences__detail__text__h3">Marc Dorcel Groupe
@@ -121,9 +130,11 @@ const Experiences = ({ refExperiences }) => {
         </div>
 
         <div className="experiences__detail">
-          <a href="https://www.youtube.com/user/clementkieken" target="_blank" rel="noopener noreferrer" className="experiences__detail__h3__link">
-            <img className="experiences__detail__webedia" src={cat} alt="cat logo" />
-          </a>
+          <div className="experiences__detail__img">
+            <a href="https://www.youtube.com/user/clementkieken" target="_blank" rel="noopener noreferrer" className="experiences__detail__h3__link">
+              <img className="experiences__detail__logo" src={cat} alt="cat logo" />
+            </a>
+          </div>
           <div className="experiences__detail__text">
             <h2 className="experiences__detail__text__h2">Monteur / Réalisateur / Cadreur</h2>
             <h3 className="experiences__detail__text__h3">Auto-entrepreneur
@@ -153,9 +164,11 @@ const Experiences = ({ refExperiences }) => {
         </div>
 
         <div className="experiences__detail">
-          <a href="https://www.millenium.org/" target="_blank" rel="noopener noreferrer" className="experiences__detail__h3__link">
-            <img className="experiences__detail__webedia" src={millenium} alt="millenium logo" />
-          </a>
+          <div className="experiences__detail__img">
+            <a href="https://www.millenium.org/" target="_blank" rel="noopener noreferrer" className="experiences__detail__h3__link">
+              <img className="experiences__detail__logo" src={millenium} alt="millenium logo" />
+            </a>
+          </div>
           <div className="experiences__detail__text">
             <h2 className="experiences__detail__text__h2">Monteur</h2>
             <h3 className="experiences__detail__text__h3"> Stages & CDD -
