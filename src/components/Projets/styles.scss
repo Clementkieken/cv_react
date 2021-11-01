@@ -1,3 +1,6 @@
+// CSS Desktop :
+@media screen and (min-width: 769px){
+
 .projet__main{
   min-height: 100vh;
   background-color: #1d1a1a;
@@ -94,43 +97,187 @@
     }
   }
 
-&__h3{
-  font-size: 1.2rem;
-  padding-top: 1.5rem;
-}
-
-  &__p{
-    padding-top: 1rem;
-    font-style: italic;
+  &__h3{
+    font-size: 1.2rem;
+    padding-top: 1.5rem;
   }
-}
 
-.projet__youtube{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-
-
-  &__card{
-    text-align: center;
-    padding-bottom: 6rem;
-    flex: 1;
-  }
-}
-
-.dropdown__button{
-  &__arrow{
-    transition: transform 0.3s;
-
-    &__animation{
-      transform: rotateZ(180deg);
+    &__p{
+      padding-top: 1rem;
+      font-style: italic;
     }
   }
+
+  .projet__youtube{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+
+    &__card{
+      text-align: center;
+      padding-bottom: 6rem;
+      flex: 1;
+    }
+  }
+
+  .dropdown__button{
+    &__arrow{
+      transition: transform 0.3s;
+
+      &__animation{
+        transform: rotateZ(180deg);
+      }
+    }
+  }
+
+  .projet__transition{
+    width: 80%;
+    margin: auto;
+    border: 1px solid #a12531;
+    margin-bottom: 3rem;
+  }
 }
 
-.projet__transition{
-  width: 80%;
-  margin: auto;
-  border: 1px solid #a12531;
-  margin-bottom: 3rem;
+// CSS Mobile :
+@media screen and (max-width: 768px) {
+
+  .projet__main{
+
+    background-color: #1d1a1a;
+    color: white;
+
+    &__title{
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-left: 2rem;
+      font-size: 1.5rem;
+      color: #a12531;
+    }
+
+    &__category{
+      font-size: 1.2rem;
+      margin-left: 5rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .projet__detail{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    transition: all .5s ease-in-out;
+    width: 100%;
+  
+    &__card{
+      padding-top: 1rem;
+      text-align: center;
+      padding-bottom: 1rem;
+      width: 100%;
+      border-bottom: white 2px solid;
+  
+      &__evadia{
+        width: 20%;
+        transition: all .2s ease-in;
+        }
+  
+        &__evadia:hover{
+          transform: scale(1.2);
+        }
+  
+      &__detectiv{
+        width: 30%;
+        border-radius: 5%;
+        transition: all .2s ease-in;
+        }
+  
+        &__detectiv:hover{
+          transform: scale(1.2);
+        }
+  
+      &__soundboard{
+        width: 28%;
+        border-radius: 5%;
+        transition: all .2s ease-in;
+        }
+  
+        &__soundboard:hover{
+          transform: scale(1.2);
+        }
+  
+      &__github{
+        padding-top: 1.5rem;
+        width: 20%;
+        transition: all .2s ease-in;
+      }
+  
+      &__github:hover{
+        transform: scale(1.2);
+      }
+  
+      &__text{
+        text-align: center;
+      }
+    }
+  
+    &__h2{
+      font-size: 1.2rem;
+      padding-bottom: 1.5rem;
+      padding-top: 3rem;
+      font-weight: bold;
+      // color: #a12531;
+  
+      &__inner{
+        width: 60%;
+        height: 1px;
+        margin: 0px auto;
+        border-bottom: 1px solid #969696;
+      }
+    }
+  
+    &__h3{
+      font-size: 1.1rem;
+      padding-top: 1.5rem;
+    }
+  
+      &__p{
+        padding-top: 1rem;
+        font-style: italic;
+      }
+    }
+  
+    .projet__youtube{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+  
+  
+      &__card{
+        text-align: center;
+        padding-bottom: 6rem;
+        flex: 1;
+      }
+    }
+  
+    .dropdown__button{
+      &__arrow{
+        transition: transform 0.3s;
+  
+        &__animation{
+          transform: rotateZ(180deg);
+        }
+      }
+    }
+  
+    .projet__transition{
+      width: 80%;
+      margin: auto;
+      border: 1px solid #a12531;
+      margin-bottom: 3rem;
+      margin-top: 2rem;
+    }
+
 }
