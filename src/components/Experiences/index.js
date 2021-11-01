@@ -69,7 +69,9 @@ const Experiences = ({ refExperiences }) => {
               Missions  <IoChevronDownOutline className={` dropdown__button__arrow ${webediaOpen ? 'dropdown__button__arrow__animation' : ''}`} />
             </div>
             {webediaOpen && (
-            <p className="experiences__detail__text__p">• Dérushage, montage et habillage de capsule pour le département événement (event BNP).</p>
+            <ul className="experiences__detail__text__ul">
+              <li className="experiences__detail__text__li">• Dérushage, montage et habillage de capsule pour le département événement (event BNP).</li>
+            </ul>
             )}
           </div>
         </div>

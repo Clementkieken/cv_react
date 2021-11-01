@@ -1,81 +1,157 @@
+// CSS Desktop :
+@media screen and (min-width: 769px){
+
 .skills{
   min-height: 100vh;
   background-color: rgb(238, 238, 238);
 
-  &__title{
-    padding-top: 3rem;
-    padding-bottom: 4rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-left: 2rem;
-    font-size: 2.5rem;
-    color: #a12531;
+    &__title{
+      padding-top: 3rem;
+      padding-bottom: 4rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-left: 2rem;
+      font-size: 2.5rem;
+      color: #a12531;
+      }
+
+    &__all{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-content: stretch;
     }
 
-  &__all{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-content: stretch;
+    &__detail{
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+    
+      &__h2{
+        font-size: 1.5rem;
+        padding-bottom: 1.2rem;
+        color: cornflowerblue;
+        font-weight: bold;
+        text-align: center;
+      }
+    
+      &__logo_display{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: flex-start;
+        justify-content: space-around;
+        margin-top: 2rem;
+    
+    
+      }
+    
+      &__dev__logo{
+        width: 70px;
+        height: auto;
+      }
+      
+    &__ul{
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: space-around;
+      column-gap: 2rem;
+      row-gap: 2rem;
+    
+    }
+    
+    &__li{
+      padding-bottom: 2rem;
+    
+    }
+    
+      &__li_logo{
+        display: flex;
+        // padding-right: 2rem;
+        padding-bottom: 2rem;
+        // width: 30%;
+    
+      }
+    
+      &__transition{
+        border-left: solid black 2px;
+      }
+    }
   }
 }
 
-.skills__detail{
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+// CSS Mobile :
+@media screen and (max-width: 768px) {
 
-  &__h2{
-    font-size: 1.5rem;
-    padding-bottom: 1.2rem;
-    color: cornflowerblue;
-    font-weight: bold;
-    text-align: center;
+  .skills{
+
+    &__title{
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-left: 2rem;
+      font-size: 1.5rem;
+      color: #a12531;
+      }
+
+    &__all{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-content: stretch;
+    }
+
+    &__detail{
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      &__h2{
+        font-size: 1.2rem;
+        padding-bottom: 1.2rem;
+        color: cornflowerblue;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      &__logo_display{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: flex-start;
+        justify-content: space-around;
+        // margin-top: 2rem;
+      }
+
+      &__dev__logo{
+        width: 70px;
+        height: auto;
+      }
+
+      &__ul{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        column-gap: 2rem;
+        row-gap: 2rem;
+      }
+
+      &__li{
+        padding-bottom: 2rem;
+      }
+
+      &__transition{
+        border-bottom: solid black 2px;
+        width: 80%;
+        margin: auto;
+      }
+    }
   }
-
-  &__logo_display{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: flex-start;
-    justify-content: space-around;
-    margin-top: 2rem;
-
-
-  }
-
-  &__dev__logo{
-    width: 70px;
-    height: auto;
-  }
-  
-&__ul{
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: space-around;
-  column-gap: 2rem;
-  row-gap: 2rem;
-
 }
-
-&__li{
-  padding-bottom: 2rem;
-
-}
-
-  &__li_logo{
-    display: flex;
-    // padding-right: 2rem;
-    padding-bottom: 2rem;
-    // width: 30%;
-
-  }
-
-  &__transition{
-    border-left: solid black 2px;
-  }
-}
-
