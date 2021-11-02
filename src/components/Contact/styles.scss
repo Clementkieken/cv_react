@@ -1,3 +1,6 @@
+// CSS Desktop :
+@media screen and (min-width: 769px){
+
 .contact__main{
     min-height: calc(100vh - 84px);
     background-color: rgb(238, 238, 238);
@@ -56,5 +59,71 @@
     &__github:hover{
         transform: scale(1.1);
     }
+}
+}
 
+// CSS Mobile :
+@media screen and (max-width: 768px) {
+
+    .contact__main{
+        min-height: calc(100vh - 84px);
+        background-color: rgb(238, 238, 238);
+    
+        &__title{
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-left: 2rem;
+            font-size: 1.5rem;
+            color: #a12531;
+          }
+    }
+    
+    .contact__details{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+    
+    
+        &__display{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding-bottom: 2rem;
+        }
+    
+        &__a{
+            width: 30%;
+        }
+    
+        &__email{
+            width: 100%;
+            transition: all .2s ease-in;
+        }
+    
+        &__email:hover{
+            transform: scale(1.1);
+        }
+    
+        &__linkedin{
+            width: 100%;
+            transition: all .2s ease-in;
+        }
+        
+        &__linkedin:hover{
+            transform: scale(1.1);
+        }
+    
+        &__github{
+            width: 100%;
+            transition: all .2s ease-in;
+        }
+    
+        &__github:hover{
+            transform: scale(1.1);
+        }
+    }  
 }

@@ -1,8 +1,6 @@
 /* eslint-disable max-len */
 // == Import
 import { useRef, useEffect, useState } from 'react';
-
-// import { Route, Switch } from 'react-router-dom';
 import './styles.css';
 
 // == Import Composant
@@ -15,8 +13,8 @@ import Projets from '../Projets';
 import Contact from '../Contact';
 import Footer from '../Footer';
 
-// == Composant
 const App = () => {
+  // == Composant utilisant un useRef pour scroll directement à l'endroit souhaité via la NavBar :
   const refAbout = useRef();
   const refExperiences = useRef();
   const refFormation = useRef();
@@ -28,7 +26,9 @@ const App = () => {
 
   const [navColor, setNavColor] = useState('bckgrnd__white');
 
+  // ==  Fonction pour changer la couleur de la NavBar selon le positionnement du scroll :
   const handleScroll = () => {
+    // == Logique écrite à traduire en JavaScript :
     // savoir où l'écran (window) est positionné en height par rapport à tout le document
     //* par ex si le document fait 10000px de height, je veux savoir où je suis en train de regarder
     // je compare cette valeur avec la position dans le document de chq section avec les ref

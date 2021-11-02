@@ -1,102 +1,85 @@
-/* eslint-disable max-len */
 /* eslint-disable react/button-has-type */
-/* eslint-disable no-nested-ternary */
 import './styles.scss';
 import PropTypes from 'prop-types';
-// import { useState } from 'react';
 
-// == Les éléments commentés sont une tentative de création de Burger Menu pour la NavBar en version mobile.
-
-const Navbar = ({
-  refAbout, refExperiences, refFormation, refSkills, refProjets, refContact, navColor, navBanner,
+const MenuBurger = ({
+  refAbout, refExperiences, refFormation, refSkills, refProjets, refContact, navBanner,
 }) => (
-  // const [menuOpen, setMenuOpen] = useState(false);
-  // const handleMenuOpen = () => {
-  //   setMenuOpen(!menuOpen);
-  // };
-
-  <nav
-    className={`menu ${navColor}`}
-    ref={navBanner}
-  >
-
-    {/* <nav
-      className={`menu ${navColor} ${menuOpen ? 'show-nav' : 'hide-nav'} `}
-      ref={navBanner}
-    > */}
-    <ul className="menu__items">
+  <nav className="navbar">
+    <div className="navbar__logo">Logo</div>
+    <ul className="navbar__item">
 
       <div
-        className="menu__item_one"
+        className="navbar__item"
         onClick={() => {
           const top = refAbout.current.offsetTop;
           window.scrollTo({ top: (top - navBanner.current.getBoundingClientRect().height), behavior: 'smooth' });
         }}
       >
         <li
-          className="menu__li"
+          className="navbar__li"
         >
           A propos
         </li>
       </div>
       <div
-        className="menu__item_one"
+        className="navbar__item"
         onClick={() => {
           const top = refExperiences.current.offsetTop;
           window.scrollTo({ top: (top - navBanner.current.getBoundingClientRect().height), behavior: 'smooth' });
         }}
       >
         <li
-          className="menu__li"
+          className="navbar__li"
         >
           Experiences
         </li>
       </div>
 
       <div
-        className="menu__item_one"
+        className="navbar__item"
         onClick={() => {
           const top = refFormation.current.offsetTop;
           window.scrollTo({ top: (top - navBanner.current.getBoundingClientRect().height), behavior: 'smooth' });
         }}
       >
         <li
-          className="menu__li"
+          className="navbar__li"
         >
           Formation
         </li>
       </div>
 
       <div
-        className="menu__item_one"
+        className="navbar__item"
         onClick={() => {
           const top = refSkills.current.offsetTop;
           window.scrollTo({ top: (top - navBanner.current.getBoundingClientRect().height), behavior: 'smooth' });
         }}
       >
         <li
-          className="menu__li"
+          className="navbar__li"
         >
           Compétences
         </li>
       </div>
 
       <div
-        className="menu__item_one"
+        className="navbar__item"
         onClick={() => {
           const top = refProjets.current.offsetTop;
           window.scrollTo({ top: (top - navBanner.current.getBoundingClientRect().height), behavior: 'smooth' });
         }}
       >
         <li
-          className="menu__li"
+          className="navbar__li"
         >
           Projets
         </li>
       </div>
 
       <div
-        className="menu__item_one"
+        className="navbar__item"
         onClick={() => {
           const top = refContact.current.offsetTop;
           window.scrollTo({ top: (top - navBanner.current.getBoundingClientRect().height), behavior: 'smooth' });
@@ -108,26 +91,22 @@ const Navbar = ({
           Contact
         </li>
       </div>
-
     </ul>
-    {/* <button
-        className="navbar__btn"
-        onClick={handleMenuOpen}
-      >
-        X
-      </button> */}
+    <button className="navbar__btn">
+      <span className="burger-bar">X</span>
+    </button>
   </nav>
+
 );
 
-export default Navbar;
+export default MenuBurger;
 
-Navbar.propTypes = {
+MenuBurger.propTypes = {
   refAbout: PropTypes.object.isRequired,
   refExperiences: PropTypes.object.isRequired,
   refFormation: PropTypes.object.isRequired,
   refSkills: PropTypes.object.isRequired,
   refProjets: PropTypes.object.isRequired,
   refContact: PropTypes.object.isRequired,
-  navColor: PropTypes.string.isRequired,
   navBanner: PropTypes.object.isRequired,
 };
