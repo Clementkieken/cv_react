@@ -33,6 +33,7 @@ import gdoclogo from '../../../public/img/ico_resize/gdoc.ico';
 const Skills = ({ refSkills }) => (
   <div className="skills" ref={refSkills}>
     <h1 className="skills__title">Compétences</h1>
+    <p className="skills__legend">Légende des icônes au survol.</p>
 
     <div className="skills__all">
 
@@ -90,9 +91,11 @@ const Skills = ({ refSkills }) => (
       <div className="skills__detail">
         <h2 className="skills__detail__h2">Langues</h2>
         <div className="skills__detail__logo_display">
-          <ul className="skills__detail__ul">
-            <li className="skills__detail__li_logo"><img className="skills__detail__dev__logo" src={englogo} alt="English flag logo" /></li>
-            <li className="skills__detail__li_logo"><img className="skills__detail__dev__logo" src={frlogo} alt="French flag logo" /></li>
+          <ul className="skills__detail__langues">
+            <li className="skills__detail__li_langues"><img className="skills__detail__dev__logo" src={englogo} alt="English flag logo" /></li>
+            <li className="skills__detail__langues__li">• Niveau C1</li>
+            <li className="skills__detail__li_langues"><img className="skills__detail__dev__logo" src={frlogo} alt="French flag logo" /></li>
+            <li className="skills__detail__langues__li">• Natif</li>
           </ul>
         </div>
       </div>
@@ -104,8 +107,8 @@ const Skills = ({ refSkills }) => (
         <ul className="skills__detail__ul__divers">
           <li className="skills__detail__li">• Auteur du mémoire "<span className="bold">La Place du Monteur dans l'eSport</span>" en 2013.</li>
           <li className="skills__detail__li">• <span className="bold">Management</span> de guilde sur World of Warcraft depuis <span className="bold">14 ans</span> (entre 15 et 30 joueurs).</li>
-          <li className="skills__detail__li">• Réalisateur, cadreur, monteur  bénévole sur tout contenu vidéo (clips, émissions,enseignement...)./</li>
-          <li className="skills__detail__li">• Backpack trip.</li>
+          <li className="skills__detail__li">• Réalisateur, cadreur, monteur  bénévole sur tout contenu vidéo (clips, émissions,enseignement...).</li>
+          <li className="skills__detail__li">• Backpack trip: tour de l’écosse à vélo, randonnées annuelles dans les Alpes....</li>
 
         </ul>
       </div>

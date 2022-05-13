@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { IoChevronDownOutline } from 'react-icons/io5';
 
-import evadia from '../../../public/img/resize/logo_v4.png';
+import evadia from '../../../public/img/9tq.png';
 import webedia from '../../../public/img/resize/webedia.png';
 import pgs from '../../../public/img/resize/pgs.png';
 import dorcel from '../../../public/img/resize/dorcel.png';
@@ -27,14 +27,14 @@ const Experiences = ({ refExperiences }) => {
       <div className="experiences__flex">
         <div className="experiences__detail">
           <div className="experiences__detail__img">
-            <a href="https://evadia.tech" target="_blank" rel="noopener noreferrer">
-              <img className="experiences__detail__logo" src={evadia} alt="evadia logo" />
+            <a href="https://9tq.fr/" target="_blank" rel="noopener noreferrer">
+              <img className="experiences__detail__logo" src={evadia} alt="9tq logo" />
             </a>
           </div>
           <div className="experiences__detail__text">
-            <h2 className="experiences__detail__text__h2">Product Owner & Développeur FrontEnd</h2>
-            <h3 className="experiences__detail__text__h3">Evadia (<a href="https://oclock.io/" target="_blank" rel="noopener noreferrer" className="experiences__detail__h3__link">O'Clock</a>) -
-              <span className="experiences__detail__text__h3__date"> Septembre à Octobre 2021</span>
+            <h2 className="experiences__detail__text__h2">Chef de Projet Web</h2>
+            <h3 className="experiences__detail__text__h3">9TroisQuarts (<a href="https://9tq.fr/" target="_blank" rel="noopener noreferrer" className="experiences__detail__h3__link">O'Clock</a>) -
+              <span className="experiences__detail__text__h3__date"> Déc. 2021 à juin 2022</span>
             </h3>
 
             <div className="experiences__detail__category" onClick={() => setEvadiaOpen((old) => !old)}>
@@ -43,9 +43,9 @@ const Experiences = ({ refExperiences }) => {
             {evadiaOpen && (
             <ul className="experiences__detail__text__ul">
               <li className="experiences__detail__text__li">• Prise de décision UI et UX.</li>
-              <li className="experiences__detail__text__li">• Développement des components React en binôme.</li>
-              <li className="experiences__detail__text__li">• Développement de quelques fonctionnalités React.</li>
-              <li className="experiences__detail__text__li">• Présentation du projet pour client.</li>
+              <li className="experiences__detail__text__li">• Suivi et gestion des projets web en cours.</li>
+              <li className="experiences__detail__text__li">• Suivi maintenance et qualité des produits.</li>
+              <li className="experiences__detail__text__li">• Présentation de projets aux clients.</li>
             </ul>
             )}
 

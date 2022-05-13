@@ -7,12 +7,18 @@
 
     &__title{
       padding-top: 3rem;
-      padding-bottom: 4rem;
+      padding-bottom: 1rem;
       text-transform: uppercase;
       font-weight: bold;
       margin-left: 2rem;
       font-size: 2.5rem;
       color: #a12531;
+      }
+
+      &__legend{
+        font-style: italic;
+        margin-left: 2rem;
+        padding-bottom: 3rem;
       }
 
     &__all{
@@ -54,19 +60,19 @@
         height: auto;
       }
       
-    &__ul{
-      display: flex;
-      flex-wrap:wrap;
-      justify-content: space-around;
-      column-gap: 2rem;
-      row-gap: 2rem;
-    
-    }
-    
-    &__li{
-      padding-bottom: 2rem;
-    
-    }
+      &__ul{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        column-gap: 2rem;
+        row-gap: 2rem;
+      
+      }
+      
+      &__li{
+        padding-bottom: 2rem;
+      
+      }
     
       &__li_logo{
         display: flex;
@@ -76,6 +82,16 @@
     
       }
     
+      &__langues{
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__langues__li{
+        padding-top: 0.5rem;
+        padding-bottom: 1.5rem;
+      }
+
       &__transition{
         border-left: solid black 2px;
       }
@@ -90,12 +106,18 @@
 
     &__title{
       padding-top: 3rem;
-      padding-bottom: 2rem;
+      padding-bottom: 1rem;
       text-transform: uppercase;
       font-weight: bold;
       margin-left: 2rem;
       font-size: 1.5rem;
       color: #a12531;
+      }
+
+      &__legend{
+        font-style: italic;
+        margin-left: 2rem;
+        padding-bottom: 2rem;
       }
 
     &__all{
@@ -145,6 +167,11 @@
 
       &__li{
         padding-bottom: 2rem;
+      }
+
+      &__langues__li{
+        padding-top: 0.5rem;
+        padding-bottom: 1.5rem;
       }
 
       &__transition{

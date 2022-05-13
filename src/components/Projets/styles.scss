@@ -119,6 +119,11 @@
       padding-bottom: 6rem;
       flex: 1;
     }
+
+    &__iframe{
+      width: 400px;
+      height: 225px;
+    }
   }
 
   .dropdown__button{
@@ -259,6 +264,11 @@
         text-align: center;
         padding-bottom: 6rem;
         flex: 1;
+      }
+
+      &__iframe{
+        width: 280px;
+        height: 158px;
       }
     }
   
