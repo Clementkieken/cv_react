@@ -7,7 +7,7 @@ const About = ({ refAbout }) => (
   <div className="about__main" ref={refAbout}>
     <div className="about__profil">
       <h1 className="about__h1">Clément <span className="about__h1_name">KIEKEN</span></h1>
-      <h2 className="about__h2">Développeur FrontEnd / Monteur audiovisuel</h2>
+      <h2 className="about__h2">Monteur audiovisuel / Chef de projet web</h2>
       <div className="about__img">
         <a href="https://github.com/Clementkieken" target="_blank" rel="noreferrer">
           <img className="about__img" src={moipp} alt="profil" />
@@ -15,8 +15,8 @@ const About = ({ refAbout }) => (
       </div>
     </div>
     <div className="about__p">
-      <p>Après une petite dizaine d'années dans le monde de l'audiovisuel en tant que Chef monteur, réalisateur, cadreur et manager de contenu, j'ai décidé en 2020 de me renconvertir dans le développement web.
-        Les similitudes entre mon expérience dans l'audiovisuel et le développement sont nombreuses : l'organisation absolument requise, savoir réagir avec rapidité & efficacité face à l'imprévu et multiplier les casquettes afin de faire preuve de flexbilité pour la bonne tenue d'un projet.
+      <p>Après une petite dizaine d'années dans le monde de l'audiovisuel en tant que Chef monteur, réalisateur, cadreur et manager de contenu, j'ai décidé en 2020 de rajouter une corde à mon arc en tant que chef de projet web.
+        Les similitudes entre mon expérience dans l'audiovisuel et le développement sont nombreuses : l'organisation absolument requise, savoir réagir avec rapidité & efficacité face à l'imprévu et multiplier les casquettes afin de faire preuve de flexbilité pour la bonne tenue d'un projet. Être chef de projet m'aide également à mieux organiser mes tournages et mes montages.
         J'ai alors suivi la formation intensive FullStack JavaScript de O'Clock pendant cinq mois en 2021, spécialisé en React, apprenant au passage de nombreuses notions tel que Redux, NodeJS, MySQL, Express et EJS.
       </p>
     </div>

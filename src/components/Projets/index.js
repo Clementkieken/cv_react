@@ -89,7 +89,7 @@ const Projets = ({ refProjets }) => {
           <div className="projet__detail__card__text">
             <h2 className="projet__detail__h2">Life & Dream</h2>
             <div className="projet__detail__h2__inner">&nbsp;</div>
-            <h3 className="projet__detail__h3">2018 - Monteur</h3>
+            <h3 className="projet__detail__h3">Monteur</h3>
             <p className="projet__detail__p">Teaser pour le lancement de la chaîne Playboy TV Europe.</p>
           </div>
         </div>
@@ -99,7 +99,7 @@ const Projets = ({ refProjets }) => {
           <div className="projet__detail__card__text">
             <h2 className="projet__detail__h2">Bande Démo</h2>
             <div className="projet__detail__h2__inner">&nbsp;</div>
-            <h3 className="projet__detail__h3">2013 - 2017</h3>
+            <h3 className="projet__detail__h3">Monteur, réalisateur</h3>
             <p className="projet__detail__p">Courte bande démo de mes projets de cette époque.</p>
           </div>
         </div>
@@ -109,7 +109,7 @@ const Projets = ({ refProjets }) => {
           <div className="projet__detail__card__text">
             <h2 className="projet__detail__h2">Une journée avec Shneizel</h2>
             <div className="projet__detail__h2__inner">&nbsp;</div>
-            <h3 className="projet__detail__h3">2017 - Réalisateur, cadreur, monteur, FX, son</h3>
+            <h3 className="projet__detail__h3">Réalisateur, cadreur, monteur, FX, son</h3>
             <p className="projet__detail__p">Reportage sur Shneizel à la Coupe de France Street Fighter V.</p>
           </div>
         </div>
@@ -119,7 +119,7 @@ const Projets = ({ refProjets }) => {
           <div className="projet__detail__card__text">
             <h2 className="projet__detail__h2">La Semaine de Retox #26</h2>
             <div className="projet__detail__h2__inner">&nbsp;</div>
-            <h3 className="projet__detail__h3">2016 - Réalisateur, monteur, FX</h3>
+            <h3 className="projet__detail__h3">Réalisateur, monteur, FX</h3>
             <p className="projet__detail__p">Dernier épisode de notre chronique eSport.</p>
           </div>
         </div>
@@ -129,7 +129,7 @@ const Projets = ({ refProjets }) => {
           <div className="projet__detail__card__text">
             <h2 className="projet__detail__h2">Je suis un Geste</h2>
             <div className="projet__detail__h2__inner">&nbsp;</div>
-            <h3 className="projet__detail__h3">2015 - Monteur</h3>
+            <h3 className="projet__detail__h3">Monteur</h3>
             <p className="projet__detail__p">Court métrage de S. Koiransky - Nikon Film Festival.</p>
           </div>
         </div>
@@ -139,7 +139,7 @@ const Projets = ({ refProjets }) => {
           <div className="projet__detail__card__text">
             <h2 className="projet__detail__h2">Burolab - Versailles</h2>
             <div className="projet__detail__h2__inner">&nbsp;</div>
-            <h3 className="projet__detail__h3">2015 - Réalisateur, monteur, FX, son</h3>
+            <h3 className="projet__detail__h3">Réalisateur, monteur, FX, son</h3>
             <p className="projet__detail__p">Découvrez cet espace co-working de Versailles.</p>
           </div>
         </div>
