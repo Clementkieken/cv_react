@@ -10,8 +10,10 @@ import pgs from '../../../public/img/resize/pgs.png';
 import dorcel from '../../../public/img/resize/dorcel.png';
 import cat from '../../../public/img/resize/cool_cat.png';
 import millenium from '../../../public/img/resize/Millenium_E-Sport_Logo_2.png';
+import copa from '../../../public/img/copa.png';
 
 const Experiences = ({ refExperiences }) => {
+  const [copaOpen, setCopaOpen] = useState(false);
   const [evadiaOpen, setEvadiaOpen] = useState(false);
   const [webediaOpen, setWebediaOpen] = useState(false);
   const [pgsOpen, setPgsOpen] = useState(false);
@@ -25,6 +27,35 @@ const Experiences = ({ refExperiences }) => {
       <h1 className="experiences__main__title">Expériences</h1>
 
       <div className="experiences__flex">
+
+        <div className="experiences__detail">
+          <div className="experiences__detail__img">
+            <a href="https://copacabana-productions.com/" target="_blank" rel="noopener noreferrer">
+              <img className="experiences__detail__logo" src={copa} alt="copa logo" />
+            </a>
+          </div>
+          <div className="experiences__detail__text">
+            <h2 className="experiences__detail__text__h2">Assistant Monteur</h2>
+            <h3 className="experiences__detail__text__h3">Copacabana Production
+              <span className="experiences__detail__text__h3__date"> Juin 2022 à juillet 2022</span>
+            </h3>
+
+            <div className="experiences__detail__category" onClick={() => setCopaOpen((old) => !old)}>
+              Missions  <IoChevronDownOutline className={` dropdown__button__arrow ${copaOpen ? 'dropdown__button__arrow__animation' : ''}`} />
+            </div>
+            {copaOpen && (
+            <ul className="experiences__detail__text__ul">
+              <li className="experiences__detail__text__li">• Création de proxis.</li>
+              <li className="experiences__detail__text__li">• Synchronisation son/image.</li>
+              <li className="experiences__detail__text__li">• Montage de capsules.</li>
+              <li className="experiences__detail__text__li">• Création graphique.</li>
+              <li className="experiences__detail__text__li">• Export son/étalonnage et Masters.</li>
+            </ul>
+            )}
+
+          </div>
+
+        </div>
         <div className="experiences__detail">
           <div className="experiences__detail__img">
             <a href="https://9tq.fr/" target="_blank" rel="noopener noreferrer">
@@ -97,6 +128,7 @@ const Experiences = ({ refExperiences }) => {
               <li className="experiences__detail__text__li">• Gestion des prestataires (labo, doublage...).</li>
               <li className="experiences__detail__text__li">• Encodage interne + labo.</li>
               <li className="experiences__detail__text__li">• Asset manager.</li>
+              <li className="experiences__detail__text__li">• Contrôle qualité et technique.</li>
             </ul>
             )}
           </div>
@@ -126,6 +158,7 @@ const Experiences = ({ refExperiences }) => {
               <li className="experiences__detail__text__li">• Gestion réception, vérification, suivi, indexation et factures.</li>
               <li className="experiences__detail__text__li">• Création de contenu diverses pour la TV/R.S et retouches au montage.</li>
               <li className="experiences__detail__text__li">• Participation à l'éditorial.</li>
+              <li className="experiences__detail__text__li">• Contrôle qualité et technique.</li>
             </ul>
             )}
           </div>

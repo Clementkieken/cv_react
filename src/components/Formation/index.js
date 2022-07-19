@@ -33,6 +33,7 @@ const Formation = ({ refFormation }) => (
           <li className="formations__details__li">Post-production.</li>
           <li className="formations__details__li">Prise et traitement Son.</li>
           <li className="formations__details__li">Image (lumière, caméra).</li>
+          <li className="formations__details__li">3 court métrages.</li>
         </ul>
       </div>
 

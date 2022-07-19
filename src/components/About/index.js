@@ -15,9 +15,11 @@ const About = ({ refAbout }) => (
       </div>
     </div>
     <div className="about__p">
-      <p>Après une petite dizaine d'années dans le monde de l'audiovisuel en tant que Chef monteur, réalisateur, cadreur et manager de contenu, j'ai décidé en 2020 de rajouter une corde à mon arc en tant que chef de projet web.
-        Les similitudes entre mon expérience dans l'audiovisuel et le développement sont nombreuses : l'organisation absolument requise, savoir réagir avec rapidité & efficacité face à l'imprévu et multiplier les casquettes afin de faire preuve de flexbilité pour la bonne tenue d'un projet. Être chef de projet m'aide également à mieux organiser mes tournages et mes montages.
-        J'ai alors suivi la formation intensive FullStack JavaScript de O'Clock pendant cinq mois en 2021, spécialisé en React, apprenant au passage de nombreuses notions tel que Redux, NodeJS, MySQL, Express et EJS.
+      <p>Multi-casquette, je suis passionné de tous les aspects de l'audiovisuel, de sa pré-production jusqu'à son rendu final. Spécialisé en montage depuis une petite dizaine d'années maintenant, j'ai pu avoir la chance de toucher à différents domaines
+        tel que le documentaire, l'insitutionnel, le court-métrage, la pub, les tutoriels, le web, le reportage etc. </p>
+
+      <p>En 2020, suite au Covid, j'ai suivi une formation de développeur / chef de projet web afin d'ajouter une corde à mon arc tout en pouvant continuer 
+        à parfaire mes compétences dans l'audiovisuel ; les similitudes dans ces deux domaines étant assez proche (organisation, rigueur, planification, développement d'un projet).
       </p>
     </div>
   </div>
